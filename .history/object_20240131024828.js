@@ -69,8 +69,8 @@ keys.forEach((key) => {
 
 ////
 
-// ****Objet.values()****
-// La méthode Object.value() renvoie un tableau contenant les valeurs des propriétés représentant chaque paire clé/valeur:
+// ****Objet.valeurs()****
+// La méthode Object.entries() renvoie un tableau contenant les valeurs des propriétés représentant chaque paire clé/valeur:
 
 const user1 = {
   id: 1,

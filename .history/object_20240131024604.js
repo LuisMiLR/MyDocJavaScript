@@ -62,6 +62,7 @@ keys.forEach((key) => {
   // log the value of every key dynamically
   console.log(settings[key]);
 });
+
 //Le console.log(settings[key]) enregistrera la valeur de chaque clé.
 //"Dark"
 //"2.4.1"
@@ -69,8 +70,8 @@ keys.forEach((key) => {
 
 ////
 
-// ****Objet.values()****
-// La méthode Object.value() renvoie un tableau contenant les valeurs des propriétés représentant chaque paire clé/valeur:
+// ****Objet.valeurs()****
+// La méthode Object.entries() renvoie un tableau contenant les valeurs des propriétés représentant chaque paire clé/valeur:
 
 const user1 = {
   id: 1,
