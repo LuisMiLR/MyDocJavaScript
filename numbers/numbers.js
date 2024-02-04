@@ -20,3 +20,13 @@ cela signifie qu’il existe une méthode something()que vous pouvez appeler sur
 Convertir d'un nombre en chaîne :value.toString()
 NaNsignifie Pas un Numéro
 NaNest souvent le signe d'un bug. */
+
+/* Récapitulatif du chapitre
+Convertir d'un nombre en chaîne :value.toString()
+NaNsignifie Pas un Numéro
+NaNest souvent le signe d'un bug.
+Convertir de la chaîne en nombre Number.parseInt(value, 10).
+//// Number.parseInt()est le nom de la fonction que vous appelez.
+10 est la base que vous devez spécifier.
+Assurez-vous de toujours préciser la base pour éviter les mauvaises surprises.
+L'opérateur reste ( % ) renvoie le reste de division entre 2 nombres. */

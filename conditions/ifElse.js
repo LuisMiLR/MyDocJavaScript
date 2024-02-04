@@ -48,7 +48,11 @@ function isPassing(grade) {
 
 Cela ne fonctionne que lorsque vous renvoyez un booléen à partir d'une fonction.
 
-Suivez-moi sur Twitter/Instagram
-Une introduction tardive : Hé 👋, je m'appelle Jad. Je suis l'auteur de ce cours ainsi que le créateur et le mainteneur de la plateforme sur laquelle vous étudiez.
-
  */
+
+//résumé
+
+/* En utilisant une condition if , vous pouvez exécuter un morceau de code lorsque la condition est évaluée àtrue
+-La syntaxe est if (condition)puis des accolades {}enveloppent les lignes de code qui correspondent à cette condition
+-Le mot clé else peut être utilisé pour exécuter un autre code basé sur toutes les autres conditions non satisfaites par le if.
+-Lorsque vous avez une if/else condition qui renvoie deux résultats différents, il est possible de supprimer le else mot-clé. */
