@@ -1,4 +1,4 @@
-//Les Objets en JavaScript et la Mémoire
+//LES OBJECTS EN JS ET LA MEMOIRE
 
 /* 
 En JavaScript, les objets sont des structures de données importantes qui nous permettent de stocker et d'organiser des informations. 
@@ -13,11 +13,14 @@ const person = {
 };
 
 /* 
-Bien sûr ! Commençons par comprendre comment les objets sont gérés en mémoire en JavaScript.
 
-************************************************Les Objets en JavaScript et la Mémoire
+Commençons par comprendre comment les objets sont gérés en mémoire en JavaScript.
 
-En JavaScript, les objets sont des structures de données importantes qui nous permettent de stocker et d'organiser des informations. Lorsque vous créez un objet, JavaScript alloue de l'espace mémoire pour stocker cet objet.
+
+************************************************ Les Objets en JavaScript et la Mémoire **********************************************************************
+
+En JavaScript, les objets sont des structures de données importantes qui nous permettent de stocker et d'organiser des informations. Lorsque vous créez un objet, 
+JavaScript alloue de l'espace mémoire pour stocker cet objet.
 
 Prenons un exemple simple :*/
 
@@ -27,11 +30,10 @@ const persons = {
   age: 25,
 };
 // La variable person contient une référence à l'objet en mémoire, pas les données elles-mêmes.
-
 /* 
 
 
-************************************************La Référence à l'Objet
+************************************************ La Référence à l'Objet ***************************************************************************************
 
 Lorsque vous créez cet objet person, la variable person ne stocke pas directement tout l'objet en elle-même. Au lieu de cela, elle stocke une référence à l'emplacement 
 en mémoire où l'objet est stocké.
