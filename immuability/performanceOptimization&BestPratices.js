@@ -1,4 +1,4 @@
-//Performance optimization and best pratique
+//Performance optimization and best pratice
 
 /* Maintenant, abordons des stratégies d'optimisation des performances et quelques bonnes pratiques essentielles lors de la programmation en JavaScript.
 
