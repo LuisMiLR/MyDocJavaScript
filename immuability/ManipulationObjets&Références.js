@@ -1,4 +1,5 @@
 //Manipulation d' Objets & Références en js
+//point 2
 
 /* Maintenant que nous comprenons que les variables qui stockent des objets contiennent en réalité des références à la mémoire où ces objets sont stockés, 
 examinons comment cela affecte la manipulation d'objets.

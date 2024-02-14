@@ -1,4 +1,5 @@
 //La Mémoire et la Gestion des Objets en JavaScript
+//Point 3
 
 /* 
 Continuons notre exploration de la gestion de la mémoire en JavaScript, en mettant l'accent sur la libération de mémoire et les bonnes pratiques associées.
@@ -43,6 +44,7 @@ Gestion des références circulaires : Si vous utilisez des structures de donné
 
 Libération Manuelle : Dans certains cas, pour les ressources importantes, libérez manuellement la mémoire en réinitialisant les références à null. 
 
+Conclusion :
 Comprendre comment JavaScript gère la mémoire et les références est essentiel pour écrire un code efficace et éviter les fuites de mémoire. Bien que le 
 garbage collector simplifie la gestion de la mémoire, il est important de rester conscient de la manière dont les objets sont référencés et comment cela 
 peut influencer la libération de mémoire. En suivant ces bonnes pratiques, vous pouvez améliorer la performance et la stabilité de vos applications JavaScript.

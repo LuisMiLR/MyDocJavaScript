@@ -1,5 +1,5 @@
 //LES OBJECTS EN JS ET LA MEMOIRE
-
+//Point 1
 /* 
 En JavaScript, les objets sont des structures de données importantes qui nous permettent de stocker et d'organiser des informations. 
 Lorsque vous créez un objet, JavaScript alloue de l'espace mémoire pour stocker cet objet.

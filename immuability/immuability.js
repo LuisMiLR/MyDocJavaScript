@@ -24,7 +24,7 @@ Essayons maintenant avec des tableaux et des objets :
 // [10] === [10]; //false
 // {key: "something"} === {key: "something"}; //false
 
-/* Remarque : vous obtiendrez toujours falsemême si vous avez utilisé le ==triple égal au lieu du triple égal ===.
+/* Remarque : vous obtiendrez toujours false même si vous avez utilisé le ==triple égal au lieu du triple égal ===.
 C'est bizarre quand même. Pourquoi obtenons-nous false ? 
 
 ************************************** Tableaux et objets ***********************************************

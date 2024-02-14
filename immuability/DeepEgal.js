@@ -1,6 +1,38 @@
 /* ******************************************************************* Deep egale ******************************************************************
+(opérateur d'égalité stricte)
 
-En comparant 2 objets avec ===, nous avons vu que s'ils n'étaient pas la même instance, nous obtiendrons false .
+l'opérateur de comparaison strict, souvent appelé "opérateur d'égalité stricte" ou "opérateur de comparaison triple égal" (===). Cet opérateur 
+compare à la fois la valeur et le type des deux opérandes.*/
+let a = 5;
+let b = "5";
+
+console.log(a === b); // false, car les types sont différents
+
+let c = 5;
+console.log(a === c); // true, car les valeurs et les types sont identiques
+
+/* 
+Si vous faites référence à l'opérateur de comparaison stricte (===), alors vous utilisez cet opérateur pour comparer à la fois la valeur et 
+le type de deux opérandes. Cela signifie que les deux opérandes doivent être égaux et du même type pour que la comparaison renvoie true. Si l'un 
+des types est différent, même si les valeurs sont équivalentes, la comparaison retournera false. 
+
+*** Opératieur d'égalité simple 
+parté sur L'opérateur d'égalité simple en JavaScript est représenté par ==. Cet opérateur compare les valeurs des opérandes sans prendre en compte leur type.
+Il effectue une conversion de type si nécessaire pour que les deux opérandes aient le même type, puis compare les valeurs.
+
+Voici un exemple qui montre comment l'opérateur d'égalité simple peut entraîner des comportements inattendus en raison de la conversion automatique de type :
+*/
+let x = 5;
+let y = "5";
+
+console.log(x == y); // true, car la conversion de type fait que '5' est converti en nombre 5
+
+/* Dans cet exemple, bien que les types de x et y soient différents (l'un est un nombre et l'autre est une chaîne de caractères), l'opérateur d'égalité simple convertit automatiquement la chaîne '5' en nombre 5, ce qui rend la comparaison vraie.
+
+En raison de ces conversions automatiques de type, l'utilisation de l'opérateur d'égalité simple (==) peut parfois conduire à des résultats inattendus. C'est pourquoi l'opérateur de comparaison stricte (===) est souvent préféré, car il nécessite que les valeurs soient égales et du même type, offrant ainsi une comparaison plus précise et prévisible.
+*/
+
+/*En comparant 2 objets avec ===, nous avons vu que s'ils n'étaient pas la même instance, nous obtiendrons false .
 C'est parce qu'il === s'agit de comparer les références plutôt que les valeurs. 
 
 le comportement de l'opérateur === (strictement égal) lors de la comparaison de deux objets en JavaScript. Lorsque vous utilisez === pour comparer 
