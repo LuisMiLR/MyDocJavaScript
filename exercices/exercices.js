@@ -5,37 +5,37 @@
 // function calculerMoyenne(nombres) {
 //   let resultat = 0;
 
-//   //Utilisez une boucle for pour add tous les nombres
+//   Utilisez une boucle for pour add tous les nombres
 //   for (let i = 0; i < nombres.length; i++) {
 //     resultat += nombres[i];
 //   }
 //   resultat /= nombres.length;
 
-//   //return la moyenne
+//   return la moyenne
 //   console.log(resultat);
 //   resultat;
 // }
 
-// // Appel de la fonction avec un tableau de nombres
+//  Appel de la fonction avec un tableau de nombres
 // let moyenne = calculerMoyenne([10, 20, 30, 40, 50]);
 
 //avec la méthode reduce
 
 // function calculerMoyenne(nombres) {
-//   // Utilisez reduce pour obtenir la somme de tous les nombres
+//    Utilisez reduce pour obtenir la somme de tous les nombres
 //   let somme = nombres.reduce((acc, nombre) => acc + nombre, 0);
 
-//   // Divisez la somme par le nombre d'éléments pour obtenir la moyenne
+//    Divisez la somme par le nombre d'éléments pour obtenir la moyenne
 //   let moyenne = somme / nombres.length;
 
-//   // Retournez la moyenne
+//    Retournez la moyenne
 //   return moyenne;
 // }
 
-// // Appel de la fonction avec un tableau de nombres
+//  Appel de la fonction avec un tableau de nombres
 // let moyenne = calculerMoyenne([10, 20, 30, 40, 50]);
 
-// // Affichage du résultat
+//  Affichage du résultat
 // console.log(`La moyenne est : ${moyenne}`);
 
 //Exercice : Vérification du Palindrome
