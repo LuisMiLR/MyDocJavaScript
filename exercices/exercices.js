@@ -48,3 +48,7 @@ function estPalindrome(string) {
 }
 estPalindrome("radar");
 estPalindrome("tennis");
+
+// * ceci est un test de couleur
+// ? c'est quoi ici
+// TODO : faire la fonction
