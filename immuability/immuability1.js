@@ -94,4 +94,10 @@ Les tableaux sont des objets en JavaScript.
 {} === {}c'est falseparce qu'il compare 2 instances différentes d'objets
 
 Lorsque vous affectez une variable à un objet ou à un tableau, elle ne la copie PAS. Il fera uniquement référence à sa valeur.
+
+Récapitulatif du chapitre
+
+Triple égalité === consiste à comparer les références plutôt que les valeurs. Si vous souhaitez comparer par valeurs, alors ce que vous recherchez s'appelle deep égal .
+Deep Equal est trop lent pour être utilisé dans les frameworks/bibliothèques front-end, c'est pourquoi la plupart d'entre eux s'appuient sur la vérification de l'égalité avec ===.
+Un objet immuable est un objet qui ne peut pas être modifié. Comme nous ne pouvons pas (ou parfois ne devrions pas) modifier un objet immuable, nous créons un objet entièrement nouveau basé sur l'original, laissant l'objet d'origine inchangé.
 */
