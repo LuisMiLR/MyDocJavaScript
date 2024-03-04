@@ -1,4 +1,4 @@
-//exercices: calculer une moyenne a partir d'un tableau de note
+//****************************************exercices: calculer une moyenne a partir d'un tableau de note
 
 //avec la boucle for
 
@@ -19,7 +19,7 @@
 //  Appel de la fonction avec un tableau de nombres
 // let moyenne = calculerMoyenne([10, 20, 30, 40, 50]);
 
-//avec la méthode reduce
+//*****************avec la méthode reduce
 
 // function calculerMoyenne(nombres) {
 //    Utilisez reduce pour obtenir la somme de tous les nombres
@@ -38,7 +38,7 @@
 //  Affichage du résultat
 // console.log(`La moyenne est : ${moyenne}`);
 
-//Exercice : Vérification du Palindrome
+//*********************************Exercice : Vérification du Palindrome
 //Objectif : Écrire une fonction en JavaScript qui vérifie si un mot est un palindrome.
 
 function estPalindrome(string) {
@@ -52,3 +52,4 @@ estPalindrome("tennis");
 // * ceci est un test de couleur
 // ? c'est quoi ici
 // TODO : faire la fonction
+// ! be careful

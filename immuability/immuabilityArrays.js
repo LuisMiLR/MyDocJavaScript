@@ -6,7 +6,7 @@
 
 *Vous ne pouvez pas rendre un tableau ou un objet immuable en JavaScript. Cependant, vous pouvez utiliser des méthodes spécifiques pour créer
 *une nouvelle copie qui conserverait alors la valeur de la variable d'origine. 
-*Nous appelons cela des opérations sur tableau immuable . 
+*Nous appelons cela des opérations sur tableau immuable. 
 
 
 Par exemple, nous pouvons créer une copie superficielle de ce tableau en utilisant la syntaxe spread .... 
