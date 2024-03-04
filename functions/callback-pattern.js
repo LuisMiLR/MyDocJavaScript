@@ -1,4 +1,4 @@
-//********************************************Callback patern
+//********************************************Callback pattern
 
 /* Un "callback" est une fonction passée en tant qu'argument à une autre fonction, qui sera exécutée ultérieurement une fois que certaines opérations asynchrones 
 ont été terminées. En d'autres termes, c'est une façon de spécifier le comportement qui doit être effectué après l'achèvement d'une tâche.

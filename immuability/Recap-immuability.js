@@ -1,4 +1,4 @@
-/* Récapitulatif du chapitre
+/* Récap du chapitre immuability
 
 
 
