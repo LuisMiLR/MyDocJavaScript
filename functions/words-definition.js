@@ -51,7 +51,7 @@ il est possible de passer en argument toute valeur JS (primitives et tout object
 /*  l'expression de fonction  */
 
 /* 
- Il existe également une autre définition de fonction possible : l'expression de de fonction, qui consiste à assigner une fonction à une variable 
+ Il existe également une autre définition de fonction possible : l'expression de de fonction, qui consiste à assigner une fonction à une variable (une expression de fonction que je rentre dans une variable)
  */
 
 const additionne = function (nombre1, nombre2) {
