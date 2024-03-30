@@ -1,6 +1,22 @@
 //LES OBJECTS EN JS ET LA MEMOIRE
 //Point 1
 
+/* ### 1. Introduction à la gestion de la mémoire en JavaScript :
+
+JavaScript est un langage de programmation à typage dynamique qui utilise un modèle de gestion de mémoire appelé "ramasse-miettes" (garbage collection voir point 3). Contrairement à d'autres langages comme C ou C++, où le programmeur est responsable de gérer manuellement la mémoire, JavaScript automatise ce processus pour simplifier le développement.
+
+### 2. Variables et allocation de mémoire :
+
+En JavaScript, vous déclarez des variables en utilisant les mots-clés `var`, `let` ou `const`. Lorsque vous affectez une valeur à une variable, JavaScript alloue de la mémoire pour stocker cette valeur.
+
+Exemple :
+```javascript
+var x = 10;
+let y = "Hello";
+const z = true; 
+
+*/
+
 /*
 Commençons par comprendre comment les objets sont gérés en mémoire en JavaScript.
 
@@ -44,6 +60,7 @@ const anotherPerson = personz;
 
 /* Maintenant, anotherPerson fait référence au même objet en mémoire que person. Les modifications apportées à l'un des objets se refléteront dans l'autre, 
 car ils pointent tous deux vers la même zone mémoire.
+
 
 ****************************************************************** Conclusion *************************************************************************
 En résumé, en JavaScript, les objets sont stockés en mémoire, et les variables qui les référencent stockent une référence à l'emplacement en mémoire où l'objet est 

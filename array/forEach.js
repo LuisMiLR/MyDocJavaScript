@@ -97,4 +97,6 @@ Commencez toujours par un console.log()intérieur .forEach()pour visualiser le p
 La .forEach()méthode prendra la définition de votre fonction et l'appellera pour chaque élément du tableau. Chaque fois que le rappel est appelé, le premier paramètre représentera l'élément de tableau correspondant.
 Nommez vos tableaux au pluriel et l'élément du tableau (à l'intérieur du .forEach()) au singulier.
 Assurez-vous de placer correctement l' returnintérieur d'une fonction qui contient un .forEach().
+
+*La méthode forEach() ne retourne pas de nouveau tableau, elle est utilisée pour effectuer des actions sur chaque élément d'un tableau sans modifier le tableau d'origine.
 */

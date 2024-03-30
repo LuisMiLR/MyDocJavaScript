@@ -101,7 +101,7 @@ const grades = [
 ];
 
 /* Nous devons mettre à jour la note avec id = 1 pour que la isPassing propriété soit définie sur true. Utilisons la .find()méthode Array pour trouver l'objet 
-à l'intérieur du tableau d'objetsgrades : 
+à l'intérieur du tableau d'objets grades : 
 */
 
 // find the entry with id = 1

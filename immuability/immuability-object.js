@@ -3,7 +3,7 @@
 //Opérations sur les objets immuables
 
 /* Le même concept abordé dans la dernière leçon s’applique aux objets. Nous devons créer une copie de l'objet au lieu de modifier l'original. 
-Pour ce faire, vous pouvez également utiliser l' ...opérateur pour cloner un objet :
+Pour ce faire, vous pouvez également utiliser l' ...spread operator pour cloner un objet :
  */
 
 const user = {
@@ -27,11 +27,11 @@ const clonedUser = {
 console.log(clonedUser); // {id: 1, age: 24} (new object not related to 'user')
 console.log(users); // {id: 1, age: 23} (unchanged)
 
-//*Remarquez comment age: user.age + 1remplace la valeur précédente de la agepropriété.
+//*Remarquez comment age: user.age + 1remplace la valeur précédente de la age propriété.
 
 /* Suppression immuable
 Bien que moins utilisé, voici comment supprimer de manière immuable une propriété d’un objet. C'est une combinaison de déstructuration 
-d'objet et d' ...opérateur : */
+d'objet et de spread operator : */
 
 const book = {
   id: 1,
@@ -45,7 +45,7 @@ const { year, ...rest } = book;
 console.log(rest); // { id: 1, title: "Harry Potter", rating: 4.5}
 console.log(book); // {id: 1, title: "Harry Potter", year: 2017, rating: 4.5} (unchanged)
 
-/* La raison pour laquelle cela fonctionne est que {year, ...rest} = book la valeur de la clé est déstructurée yearde l' bookobjet. C'est similaire 
+/* La raison pour laquelle cela fonctionne est que {year, ...rest} = book la valeur de la clé est déstructurée year de l' book objet. C'est similaire 
 à la lecture book.year.
 
 Cependant, remarquez comment nous demandons à JavaScript de déstructurer le reste de l'objet avec ...rest. Cela signifie combiner toutes les 
