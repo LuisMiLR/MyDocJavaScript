@@ -36,6 +36,8 @@ colors.shift();
 //.indexOf connaitre la position d'un élement dans un tableau
 const colorss = ["pink", "black", "salmon", "gold"];
 console.log(colorss.indexOf("pink")); // affichera 0 car "pink" est à la position 0 dans le tableau
+//exemple dans une condition if si n'est pas present retourne -1
+//if (wordUnique.indexOf(strings[i]) === -1)
 
 //Si l'élément recherché ne se trouve pas dans le tableau, la méthode .indexOf() renvoie -1 :
 
