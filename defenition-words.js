@@ -1,6 +1,6 @@
 /* //*qu'est ce qu'une référence ?
 
-En programmation, une référence est une valeur qui permet d'indiquer l'emplacement en mémoire d'un objet ou d'une variable plutôt que de stocker directement sa valeur. 
+En programmation, une référence désigne une valeur qui permet d'indiquer l'emplacement en mémoire d'un objet ou d'une variable plutôt que de stocker directement sa valeur. 
 Cela permet d'accéder et de manipuler cet objet ou à cette variable de manière flexible et efficace.
 
 Voici quelques points clés :
