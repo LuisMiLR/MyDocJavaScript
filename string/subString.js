@@ -4,7 +4,7 @@
 // vous pouvez l'obtenir "rain"en prenant les 4 derniers caractères .
 
 // Vous avez souvent besoin d'obtenir quelques caractères d'une chaîne plutôt que la totalité. Nous utilisons donc
-// la substringméthode.
+// la substring méthode.
 
 //subString signature
 // Une signature de fonction vous donne une explication des paramètres que vous devez transmettre pour cette méthode. Jetons
@@ -20,7 +20,7 @@ someString.substring(indexStart, indexEnd);
 const language = "JavaScript";
 language.substring(1, 4); //"ava"
 
-// Le indexEndparamètre est facultatif, ce qui signifie que vous pouvez transmettre le indexStartet il supposera qu'il indexEndest
+// Le indexEndparamètre est facultatif, ce qui signifie que vous pouvez transmettre le indexStartet il supposera qu'il indexEndest jusqu'au bout.
 // identique à la longueur de la chaîne. Voici un exemple :
 
 language.substring(4); //"Script"

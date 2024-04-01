@@ -13,7 +13,7 @@ const sum = (a, b) => {
 
 sum(1, 3); // undefined
 
-/* Comme vous pouvez le voir, sum(1, 3)renvoie undefinedcar nous n'avions pas de returnmot-clé dans le corps de la fonction.
+/* Comme vous pouvez le voir, sum(1, 3)renvoie undefined car nous n'avions pas de return mot-clé dans le corps de la fonction.
 
 Cependant, avec les fonctions fléchées, vous pouvez implicitement renvoyer le résultat de la fonction dans certaines conditions 
 très spécifiques. Commençons par un exemple puis nous expliquerons comment nous y sommes arrivés : 
@@ -30,8 +30,9 @@ remplir toutes les conditions suivantes :
 
 1 Votre fonction doit être une fonction fléchée.
 2 Le corps de la fonction ne doit être qu'une seule instruction . Cela signifie que vous devez supprimer les accolades.
-3 Vous devez supprimer le returnmot-clé car le corps de la fonction est une seule instruction.
-Lorsque toutes ces conditions sont remplies, la fonction flèche renverra implicitement le résultat de son corps de fonction (qui n'est qu'une seule ligne). 
+3 Vous devez supprimer le return mot-clé car le corps de la fonction est une seule instruction.
+Lorsque toutes ces conditions sont remplies, la fonction flèche renverra implicitement le résultat de son corps de fonction 
+(qui n'est qu'une seule ligne). 
 
 Prenons un autre exemple : */
 
@@ -48,7 +49,7 @@ const isLegals = (age) => age >= 18;
 
 /* La syntaxe peut paraître bizarre au début, mais une fois que vous vous y serez habitué, vous vous rendrez compte qu'elle est 
 vraiment élégante. Voici comment vous pouvez le lire :
-isLegalest une fonction qui prend l'âge et renvoie le résultat de l'expression age >= 18. 
+isLegal est une fonction qui prend l'âge et renvoie le résultat de l'expression age >= 18. 
 
 ***************** N'utilisez le retour implicite que lorsque le corps de la fonction est court et d'une seule ligne. Ne sacrifiez 
 jamais la lisibilité et la clarté du code pour utiliser une certaine fonctionnalité .
