@@ -114,6 +114,8 @@ Une variable d'instance est une variable qui appartient à une instance spécifi
 Est-ce que cela a été utile?
 
 
+
+
 *capturer les paramètres du contructeur afin de pouvoir y accéder... : 
 Cette phrase fait référence à la pratique courante dans la programmation orientée objet où les paramètres passés au constructeur d'une classe sont capturés et stockés 
 dans des variables membres de la classe. Ces variables membres sont ensuite accessibles dans d'autres méthodes de cette même classe.
