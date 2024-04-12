@@ -80,4 +80,29 @@ comme des variables d'instance. Cela signifie que vous pouvez les référencer a
 Les méthodes d'instance sont des fonctions qui peuvent être appelées sur une instance d'une classe.
 Pour pouvoir utiliser des variables d'instance dans une méthode d'instance, vous devez les préfixer avec this.(à condition qu'elles aient été capturées dans le constructor)
 À l’intérieur d’une méthode d’instance, thisfait référence à l’instance actuelle de la classe.
+
+exercice : 
+
+// class definition
+class Course {
+    constructor(name, isCompleted) {
+        this.name = name;
+        this.isCompleted = isCompleted;
+    }
+    getDescription() {
+        if (this.isCompleted) {
+            return `You have completed the ${this.name} course.`;
+        } else {
+            return `You are currently studying the ${this.name} course.`;
+        }
+    }
+}
+
+// Sample usage - do not modify
+const course1 = new Course("Learn JavaScript", false);
+console.log(course1.getDescription()); // "You are currently studying the Learn JavaScript course"
+const course2 = new Course("Learn Programming", true);
+console.log(course2.getDescription()); // "You have completed the Learn Programming course"
+
+
 */

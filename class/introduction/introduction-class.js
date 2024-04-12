@@ -1,6 +1,6 @@
 /* Introduction aux class
 
-Dernière mise à jour mai 2021
+(Dernière mise à jour mai 2021)
 Les classes en JavaScript ont une syntaxe similaire à celle des autres langages de programmation. Ils ont cependant 
 un concept d'héritage différent, mais vous n'avez pas à vous en soucier pour l'instant. Nous aborderons cela dans les 
 chapitres suivants.
@@ -14,7 +14,7 @@ Qu'est-ce qu'une class ?
 
 Lorsque votre code commencera à croître, vous aurez quelques dizaines de fonctions dans votre code source. Pour mieux organiser 
 votre code, vous pouvez regrouper les fonctions qui exécutent des fonctionnalités similaires dans une seule classe .
-C'est l'une des raisons pour lesquelles nous avons des cours . L'autre raison principale est que les classes sont 
+C'est l'une des raisons pour lesquelles nous avons des class. L'autre raison principale est que les classes sont 
 réutilisables, jetez un œil à cet exemple : 
 */
 // create a new instance of Translation with the word "Table"

@@ -1,4 +1,12 @@
-//////////////////////////////////////////////////////// OBJECT ///
+//*********************************************** Object *********************************************************************
+//****************************************************************************************************************************
+
+//********definition
+/* 
+Un objet est une antité qui possède des propriétés et des méthodes 
+- Chaque propriété définit une caractèristique, une information de l'objet (ex: la couleur)
+- Chaque méthode défini un comportement, une action de l'objet (ex: ecrire)
+*/
 
 //un object sert à stocker des propriétés alors qu'un tableau sert à stocker une liste par ex liste d'animaux
 //L'object sert à stocker les caractéristique de l'animal
@@ -23,18 +31,19 @@ mydog.age = 3;
 
 // Pour supprimer une propriété d'un objet on utilise
 delete myDog.age;
-//l'utilisation de delete n'est pas toujours nécessaire ou recommandée.
-//Pour simplement supprimer la valeur d'une propriété sans supprimer la propriété elle-même,
-//il peut être plus approprié de définir la valeur de la propriété à undefined ou null.
-//Cela dépend du contexte et de la logique de votre application.
+/* l'utilisation de delete n'est pas toujours nécessaire ou recommandée.
+Pour simplement supprimer la valeur d'une propriété sans supprimer la propriété elle-même,
+il peut être plus approprié de définir la valeur de la propriété à undefined ou null.
+Cela dépend du contexte et de la logique de votre application. */
 
-///////////////////////////////////////////////////// Méthodes sur objet ///
+//************************** Méthode sur objet
 
 //****Object.keys(obj)****
 //Cette méthode renvoi un tableau de toute les clés de l'objet fournit en parametre 'obj'
 
 // Object  avec une masjuscule est une variable globale dispo en js, similaire à Number comme
 // en exemple Number.parsInt()
+
 //la variable globale Object à des méthodes pertinente pour les objets, l'une d'elle est .keys()
 //exemple :
 
