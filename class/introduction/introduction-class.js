@@ -5,7 +5,7 @@ Les classes en JavaScript ont une syntaxe similaire à celle des autres langages
 un concept d'héritage différent, mais vous n'avez pas à vous en soucier pour l'instant. Nous aborderons cela dans les 
 chapitres suivants.
 
-Qu'est-ce qu'une class ?
+Qu'est-ce qu'une class ? 
 
  Les classes en JavaScript sont un moyen de créer des objets qui partagent certaines caractéristiques ou comportements 
  communs. Imaginez que vous fabriquiez des voitures : toutes les voitures ont des caractéristiques similaires, comme des 

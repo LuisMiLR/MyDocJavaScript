@@ -1,6 +1,6 @@
 /* //*qu'est ce qu'une référence ?
 
-En programmation, une référence désigne une valeur qui permet d'indiquer l'emplacement en mémoire d'un objet ou d'une variable plutôt que de stocker directement sa valeur. 
+En programmation, une référence permet d'indiquer l'emplacement en mémoire d'un objet ou d'une variable plutôt que de la stocker elle même en mémoire. 
 Cela permet d'accéder et de manipuler cet objet ou à cette variable de manière flexible et efficace.
 
 Voici quelques points clés :
@@ -29,6 +29,7 @@ x = 20;
 En programmation, une "référence" est souvent considérée comme une "valeur" parce qu'elle peut être manipulée comme telle dans le code. Lorsque vous utilisez 
 une référence dans votre programme, vous pouvez la stocker dans une variable, la passer à une fonction comme argument ou la retourner comme valeur de retour
 d'une fonction, tout comme vous le feriez avec une valeur ordinaire.
+
 Par exemple, si vous avez une référence à un objet, vous pouvez la stocker dans une variable, puis passer cette variable à une fonction pour qu'elle puisse 
 accéder à cet objet. Dans ce cas, vous manipulez la référence (qui est une sorte de valeur) comme si elle était l'objet lui-même.
 Ainsi, bien que techniquement une référence soit un moyen d'accéder à une valeur ou à un objet en mémoire, elle est souvent traitée comme une valeur ordinaire
@@ -37,12 +38,12 @@ dans le code. C'est pourquoi on parle de "valeur" lorsqu'on fait référence à 
 
 /* //*qu'est ce qu'une classe ? 
 Classe : Une classe est une sorte de modèle ou de plan qui décrit comment créer un objet. Elle spécifie les propriétés (variables) et les méthodes (fonctions) que 
-les objets créés à partir de cette classe auront. */
+les objets créés à partir de cette classe (read class folder). */
 
 /*
  //*qu est ce qu'une instance ?
 
-En programmation, une "instance" se réfère à un objet spécifique créé à partir d'une classe ou d'un constructeur. Une classe est un modèle ou un plan qui 
+En programmation, une "instance" fait référence à un objet spécifique créé à partir d'une classe ou d'un constructeur. Une classe est un modèle ou un plan qui 
 définit la structure et le comportement d'objets, et une instance est un objet concret qui est une occurrence de cette classe.
 
 Voici une explication plus détaillée :
@@ -79,9 +80,9 @@ La portée du bloc fait référence à la portée des variables et des fonctions
 Les variables déclarées à l'aide de « let » et « const » ont une portée de bloc, ce qui signifie qu'elles ne sont accessibles que dans le bloc dans lequel elles sont définies.
 
 //*What is Closure? - Qu’est-ce que la fermeture ?
-Une fermeture est une fonctionnalité de JavaScript dans laquelle une fonction interne conserve l'accès aux variables et aux paramètres de sa fonction externe même 
-une fois l'exécution de la fonction externe terminée. Ce comportement permet des modèles de programmation puissants tels que le maintien de l'état dans la programmation 
-fonctionnelle et la création de variables privées.
+Une closure (fermeture) est une fonctionnalité de JavaScript dans laquelle une fonction interne conserve l'accès aux variables et aux paramètres de sa fonction externe
+même une fois l'exécution de la fonction externe terminée. Ce comportement permet des modèles de programmation puissants tels que le maintien de l'état dans la 
+programmation fonctionnelle et la création de variables privées.
 
 //*What are First-Class Functions? - les fonctions de première classe ?
 Les fonctions de première classe en JavaScript sont des fonctions qui peuvent être traitées comme n'importe quelle autre valeur. Cela signifie qu'ils peuvent être 
