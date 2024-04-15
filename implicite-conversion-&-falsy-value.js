@@ -49,6 +49,7 @@ if (number) {
 // automatiquement en booléen. C'est ce qu'on appelle une conversion implicite car la conversion se produit automatiquement.
 
 //*********falsy value
+
 // En JavaScript, les valeurs ci-dessous seront converties en false et tout le reste sera converti en true :
 
 // false(est déjà un booléen)
@@ -56,7 +57,7 @@ if (number) {
 // undefined
 // 0 (number)
 // -0 (number)
-//0n (BigInt)
+// 0n (BigInt)
 // NaN
 // "" || [] (chaîne ou tableau vide)
 
@@ -84,6 +85,6 @@ if (!nname) {
 
 // La conversion implicite se produit lorsque JavaScript attend une valeur booléenne mais reçoit une valeur non booléenne.
 // La conversion implicite signifie que JavaScript convertira automatiquement la valeur en booléen.
-// Les valeurs fausses sont converties en false. Tout le reste est converti en true.
+// Les valeurs fausses sont converties en false. Tout le reste est converti en true. (voir folder implicite conversion & falsy-value)
 // Les valeurs fausses les plus courantes sont : false, null, undefined, 0, "", NaN.
 // L'opérateur logique NOT !convertit une valeur booléenne en son contraire.
