@@ -1,11 +1,11 @@
-//Manipulation d' Objets & Références en js
+//************* Manipulation d' Objets & Références en js
 //point 2
 
 /* Maintenant que nous comprenons que les variables qui stockent des objets contiennent en réalité des références à la mémoire où ces objets sont stockés, 
 examinons comment cela affecte la manipulation d'objets.
 
 
-/********************************************************* 1. Assignation de Références : ****************************************************************
+//********************************************************* 1. Assignation de Références : ****************************************************************
 Lorsque vous attribuez la valeur d'une variable à une autre avec des objets, vous copiez la référence à l'objet, pas l'objet lui-même. 
 Voyons un exemple : 
 */
@@ -35,7 +35,7 @@ const person2 = {
 
 console.log(person1 === person2); // false, car ce sont deux objets différents en mémoire
 
-/* ******************************************************** 3. Clonage d'Objets : *******************************************************************
+/* //******************************************************** 3. Clonage d'Objets : *******************************************************************
 Si vous souhaitez créer une copie indépendante d'un objet plutôt qu'une référence partagée, vous devez effectuer un "clonage". Cela peut être fait 
 manuellement ou en utilisant des méthodes appropriées.
  */
@@ -49,7 +49,7 @@ const clonedPerson = {
 // Utilisation de méthodes appropriées (par exemple, Object.assign, spread operator, etc.)
 const clonedPerson2 = { ...person };
 
-/* ************************************************** Importance de la Compréhension des Références *************************************************
+/* //************************************************** Importance de la Compréhension des Références *************************************************
 Comprendre comment les objets sont manipulés en mémoire est crucial pour éviter des erreurs subtilement liées à la manipulation d'objets. Cela devient 
 particulièrement important lors du travail avec des structures de données complexes et de la gestion d'états dans les applications JavaScript.
 

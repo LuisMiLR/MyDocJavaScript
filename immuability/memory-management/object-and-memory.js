@@ -1,16 +1,17 @@
 //LES OBJECTS EN JS ET LA MEMOIRE
 //Point 1
 
-/* ### 1. Introduction à la gestion de la mémoire en JavaScript :
+//******** 1. Introduction à la gestion de la mémoire en JavaScript :
+/*
+JavaScript est un langage de programmation à typage dynamique qui utilise un modèle de gestion de mémoire appelé "ramasse-miettes" (garbage collection voir point 3). 
+Contrairement à d'autres langages comme C ou C++, où le programmeur est responsable de gérer manuellement la mémoire, JavaScript automatise ce processus pour 
+simplifier le développement.
 
-JavaScript est un langage de programmation à typage dynamique qui utilise un modèle de gestion de mémoire appelé "ramasse-miettes" (garbage collection voir point 3). Contrairement à d'autres langages comme C ou C++, où le programmeur est responsable de gérer manuellement la mémoire, JavaScript automatise ce processus pour simplifier le développement.
+//******* 2. Variables et allocation de mémoire :
 
-### 2. Variables et allocation de mémoire :
+En JavaScript, vous déclarez des variables en utilisant les mots-clés `var`, `let` ou `const`. Lorsque vous affectez une valeur à une variable, JavaScript 
+alloue de la mémoire pour stocker cette valeur. Exemple :
 
-En JavaScript, vous déclarez des variables en utilisant les mots-clés `var`, `let` ou `const`. Lorsque vous affectez une valeur à une variable, JavaScript alloue de la mémoire pour stocker cette valeur.
-
-Exemple :
-```javascript
 var x = 10;
 let y = "Hello";
 const z = true; 
@@ -21,7 +22,7 @@ const z = true;
 Commençons par comprendre comment les objets sont gérés en mémoire en JavaScript.
 
 
-************************************************ Les Objets en JavaScript et la Mémoire **********************************************************************
+//****************************************************** Les Objets en JavaScript et la Mémoire **********************************************************************
 
 En JavaScript, les objets sont des structures de données importantes qui nous permettent de stocker et d'organiser des informations. Lorsque vous créez un objet, 
 JavaScript alloue de l'espace mémoire pour stocker cet objet.
@@ -37,7 +38,7 @@ const persons = {
 /* 
 
 
-************************************************ La Référence à l'Objet ***************************************************************************************
+//******************************************************** La Référence à l'Objet ***************************************************************************************
 
 Lorsque vous créez cet objet person, la variable person ne stocke pas directement tout l'objet en elle-même. Au lieu de cela, elle stocke une référence à l'emplacement 
 en mémoire où l'objet est stocké.
@@ -46,7 +47,8 @@ Pensez à la référence comme à une adresse, indiquant à JavaScript où trouv
 un lien vers l'emplacement en mémoire où ces données sont stockées. 
 
 
-********************************************** Conséquences de la Référence *********************************************************************************
+//****************************************************** Conséquences de la Référence *********************************************************************************
+
 Cela a des implications lorsque vous manipulez des objets. Par exemple, si vous attribuez la valeur d'une variable à une autre, vous ne copiez pas l'objet, mais 
 simplement la référence à l'objet.
 */
@@ -62,7 +64,8 @@ const anotherPerson = personz;
 car ils pointent tous deux vers la même zone mémoire.
 
 
-****************************************************************** Conclusion *************************************************************************
+//****************************************************************** Conclusion *************************************************************************************
+
 En résumé, en JavaScript, les objets sont stockés en mémoire, et les variables qui les référencent stockent une référence à l'emplacement en mémoire où l'objet est 
 stocké. Comprendre cela est crucial pour éviter les erreurs liées à la manipulation des objets et pour saisir le fonctionnement des assignations de variables 
 et des comparaisons d'objets. */

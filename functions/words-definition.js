@@ -9,9 +9,10 @@ en JS, les fonctions sont des objects 'Function', elles peuvent être copiées, 
 
 Les définitions de fonction
 
-Il y a 2 manières de définir des fonctions: les déclarationde fonction et les expressions de fonction. 
+Il y a 2 manières de définir des fonctions: les déclaration de fonction et les expressions de fonction. 
 
-- La déclaration de fonction:
+//**********La déclaration de fonction:
+
   utilise le mot clé 'function' puis le nom de la fonction, ensuite les parenthèse contenant des parametres (optionnel)
   puis les accolades contenant le bloc d'instruction 
 */
@@ -48,10 +49,11 @@ il est possible de passer en argument toute valeur JS (primitives et tout object
 
 // *! a noter les primitives sont passées par valuer et les objets par référence, comme pour les assignations !
 
-/*  l'expression de fonction  */
+//*********l'expression de fonction
 
 /* 
- Il existe également une autre définition de fonction possible : l'expression de de fonction, qui consiste à assigner une fonction à une variable (une expression de fonction que je rentre dans une variable)
+ Il existe également une autre définition de fonction possible : l'expression de fonction, qui consiste à assigner une fonction à une 
+ variable (une expression de fonction que je rentre dans une variable)
  */
 
 const additionne = function (nombre1, nombre2) {
@@ -63,7 +65,7 @@ const additionne = function (nombre1, nombre2) {
  Il y a pas de diférence au niveau de l'execution, cela permet d'utiliser des fonctions anonymes (sans nom)
  
  Vous pouvez cependant également déclarer un nom pour utilser la récursivité.
- c'est le faite d'invoquer une fonction dans la fonction, afin de l'executer jusqu'a une qu'ne condition soit rmeplie:
+ c'est le faite d'invoquer une fonction dans la fonction, afin de l'executer jusqu'a une qu'une condition soit remplie:
  */
 
 const factorielle = function f(n) {

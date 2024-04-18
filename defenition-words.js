@@ -1,6 +1,6 @@
 /* //*qu'est ce qu'une référence ?
 
-En programmation, une référence permet d'indiquer l'emplacement en mémoire d'un objet ou d'une variable plutôt que de la stocker elle même en mémoire. 
+En programmation, une référence permet d'indiquer l'emplacement en mémoire d'un objet ou d'une variable plutôt que de la stocker elle même. 
 Cela permet d'accéder et de manipuler cet objet ou à cette variable de manière flexible et efficace.
 
 Voici quelques points clés :
@@ -36,12 +36,13 @@ Ainsi, bien que techniquement une référence soit un moyen d'accéder à une va
 dans le code. C'est pourquoi on parle de "valeur" lorsqu'on fait référence à une référence en programmation. 
 */
 
-/* //*qu'est ce qu'une classe ? 
+/* 
+//*qu'est ce qu'une classe ? 
 Classe : Une classe est une sorte de modèle ou de plan qui décrit comment créer un objet. Elle spécifie les propriétés (variables) et les méthodes (fonctions) que 
 les objets créés à partir de cette classe (read class folder). */
 
 /*
- //*qu est ce qu'une instance ?
+//*qu est ce qu'une instance ?
 
 En programmation, une "instance" fait référence à un objet spécifique créé à partir d'une classe ou d'un constructeur. Une classe est un modèle ou un plan qui 
 définit la structure et le comportement d'objets, et une instance est un objet concret qui est une occurrence de cette classe.
@@ -62,6 +63,16 @@ renforçant ainsi la sécurité tout en facilitant l'accès à des ressources di
 //*What is Execution Context? 
 Le contexte d'exécution fait référence à l'environnement dans lequel le code JavaScript est exécuté. Il comprend des variables, des fonctions et la chaîne de 
 portée qui détermine l'accès aux variables pendant l'exécution du code.
+
+La "chaîne de portée" dans la définition du contexte d'exécution se réfère à la hiérarchie des portées dans laquelle les variables sont accessibles lors de l'exécution 
+du code JavaScript. En d'autres termes, chaque fois qu'une fonction est exécutée en JavaScript, un nouvel contexte d'exécution est créé pour cette fonction. 
+Ce contexte d'exécution contient non seulement les variables et les fonctions déclarées à l'intérieur de cette fonction, mais il a également un lien avec le 
+contexte d'exécution parent, formant ainsi une "chaîne de portée" ou une "chaîne d'encapsulation".
+
+Cette chaîne de portée permet à une fonction d'accéder aux variables déclarées dans ses propres limites de portée (portée locale), ainsi qu'aux variables déclarées 
+dans les contextes d'exécution parent (portée globale ou portée des fonctions englobantes).
+Par conséquent, lorsque vous faites référence à la "chaîne de portée" dans le contexte du contexte d'exécution, vous faites référence à cette hiérarchie des portées 
+qui détermine l'accès aux variables lors de l'exécution du code JavaScript.
 
 //*What is Call Stack? - Qu’est-ce que la pile d’appels ?
 La pile d'appels est une structure de données utilisée par le moteur JavaScript pour gérer l'exécution des appels de fonction. Il garde une trace du contexte d'exécution

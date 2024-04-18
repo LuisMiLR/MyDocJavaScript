@@ -1,4 +1,4 @@
-//Implicit Return (retour implicite)
+//********************************************************* Implicit Return (retour implicite) ***********************************************************************
 
 /* Lorsque vous négligez d'inclure l'instruction `return` dans une fonction JavaScript, le résultat obtenu est implicitement 
 défini comme `undefined`. L'adjectif "implicite" indique que bien que le `return` ne soit pas explicitement écrit, 

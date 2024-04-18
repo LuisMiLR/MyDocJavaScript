@@ -1,7 +1,7 @@
 // la porter des variables fait référence au contexte dans laquelle une variable est
 //déclarer et peut etre utiliser
 
-//**la portée global**//
+//****** la portée global
 
 //une variable déclarer en dehors de toute fonction ou bloc de code est une
 //variable globale
@@ -15,7 +15,7 @@ function exampleFunction() {
 exampleFunction();
 console.log(variableGlobale); // peut acceder également en dehors de la fonction
 
-//**la portée local**//
+//********* la portée local
 
 //La variable déclarée à l'intérieur d'une fonction ou d'un bloc de code est une variable
 //locale

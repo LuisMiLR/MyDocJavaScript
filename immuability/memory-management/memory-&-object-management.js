@@ -1,11 +1,11 @@
-//La Mémoire et la Gestion des Objets en JavaScript
+//*********** La Mémoire et la Gestion des Objets en JavaScript
 //Point 3
 
 /* 
 Continuons notre exploration de la gestion de la mémoire en JavaScript, en mettant l'accent sur la libération de mémoire et les bonnes pratiques associées.
 
 
-*********************************************************** 1. **La Gestion Automatique de la Mémoire :** ****************************************************
+//******************************************************* 1. **La Gestion Automatique de la Mémoire :** ************************************************************
 
 JavaScript utilise un système de gestion automatique de la mémoire appelé "Garbage Collection". Ce système identifie et libère automatiquement la
 mémoire des objets qui ne sont plus référencés. Cela signifie que lorsque vous n'avez plus de références pointant vers un objet, cet objet devient 
@@ -20,7 +20,7 @@ let person = {
 // Plus de référence à l'objet
 person = null; // L'objet peut être supprimé par le garbage collector
 
-/* ************************************************************ 2. **Références Circulaires :** **************************************************************
+/* //*************************************************** 2. **Références Circulaires :** *************************************************************************
 
 Une référence circulaire se produit lorsqu'un objet a une propriété qui pointe vers un autre objet, et cet autre objet a une propriété qui pointe de nouveau vers
 le premier objet. Cela peut entraîner des problèmes avec le garbage collector, car ces objets se référencent mutuellement, empêchant leur libération de mémoire.
@@ -30,13 +30,14 @@ let objA = {};
 let objB = {};
 
 objA.reference = objB;
-objB.reference =
-  objA; /* *************************************************************** 3. *Bonnes Pratiques : **********************************************************************
+objB.reference = objA;
 
-// Même si ces objets ne sont plus accessibles par le code, le garbage collector peut ne pas les libérer en raison de la référence circulaire.
+/* //*************************************************************** 3. *Bonnes Pratiques : **********************************************************************
 
-/*    ***********************************************Pour bien comprendre revenons un peu en arrière ! ******************************************************************
-      *******************************************************************************************************************************************************************
+Même si ces objets ne sont plus accessibles par le code, le garbage collector peut ne pas les libérer en raison de la référence circulaire.
+
+/* //***********************************************  Pour bien comprendre revenons un peu en arrière ! ***********************************************************
+//*******************************************************************************************************************************************************************
 
 ### 1. Introduction à la gestion de la mémoire en JavaScript :
 
@@ -49,12 +50,10 @@ le développement.
 En JavaScript, vous déclarez des variables en utilisant les mots-clés `var`, `let` ou `const`. Lorsque vous affectez une valeur à une variable, 
 JavaScript alloue de la mémoire pour stocker cette valeur.
 
-Exemple :
-```javascript
 var x = 10;
 let y = "Hello";
 const z = true;
-```
+
 
 ### 3. Types de données et références :
 
@@ -62,9 +61,7 @@ JavaScript gère différents types de données tels que les nombres, les chaîne
 celle-ci contient une référence à l'emplacement mémoire où se trouve cet objet, pas l'objet lui-même.
 
 Exemple :
-```javascript
 let obj = { name: "John", age: 30 };
-```
 
 Dans cet exemple, `obj` contient une référence à l'objet `{ name: "John", age: 30 }`.
 
@@ -89,14 +86,14 @@ exampleFunction(); // "I am a local variable" sera affiché dans la console */
 Les fuites de mémoire se produisent lorsque des objets ne sont plus nécessaires mais restent en mémoire car ils sont toujours référencés. Les références circulaires, où deux objets se réfèrent l'un à l'autre, sont une cause fréquente de fuites de mémoire.
 
 Exemple de référence circulaire :
-```javascript
+
 let obj1 = {};
 let obj2 = {};
 
 obj1.ref = obj2;
 obj2.ref = obj1;
 
-// Même si ces objets ne sont plus accessibles depuis le reste du code, ils ne seront pas collectés par le ramasse-miettes
+Même si ces objets ne sont plus accessibles depuis le reste du code, ils ne seront pas collectés par le ramasse-miettes
 ```
 
 ### 6. Techniques pour éviter les fuites de mémoire :

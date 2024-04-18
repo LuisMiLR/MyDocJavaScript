@@ -12,7 +12,9 @@ var message = "Bonjour, je m'appelle " + nom + " et j'ai " + age + " ans.";
 
 /* Cependant, cette méthode peut devenir fastidieuse et moins lisible lorsque vous avez plusieurs variables à intégrer. */
 
-/* Interpolation de chaînes (Template literals) :
+/*
+//******** Template literals :
+
 Les literals de modèle, introduits dans ECMAScript 6 (ES6), offrent une syntaxe plus propre et plus lisible pour l'interpolation de chaînes. Vous pouvez définir une chaîne de texte en utilisant des backticks (``) 
 et incorporer des variables ou des expressions en les plaçant entre ${}. Voici un exemple : */
 var nom = "John";
