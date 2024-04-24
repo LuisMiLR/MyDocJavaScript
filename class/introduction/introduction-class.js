@@ -25,7 +25,7 @@ firstTranslation.isEnglishWord(); //true
 const secondTranslation = new Translation("España");
 secondTranslation.isEnglishWord(); //false
 
-/* Ce sont 2 instances différentes de la même classe « Traduction ». Chacune de ces instances agit différemment, en fonction 
+/* Ce sont 2 instances différentes de la même classe « Traduction » Chacune de ces instances agit différemment, en fonction 
 du mot que vous lui avez donné. Le premier est un mot anglais donc isEnglishWordrenvoie truetandis que l'autre est un mot 
 espagnol donc isEnglishWordrenvoie false. 
 Voici comment écrire le code de cette classe de traduction :

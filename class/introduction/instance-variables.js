@@ -2,13 +2,11 @@
 //**********************************************************************************************************************************************************************
 
 /* (Les variables d'instances) 
-
-
 Dans cette leçon, nous verrons comment définir vos propres variables de classe et d'instance.
 
 //******Définissez votre propre classe
 
-Pour définir une classe, vous devez commencer par le class keyword suivi du nom de la classe.
+Pour définir une classe, vous devez commencer par le class keyword "new" suivi du nom de la classe.
 
 La convention courante pour le nom de la classe est UpperCamelCase. Voici quelques exemples:
 
@@ -51,7 +49,7 @@ class Person {
 /// class usage
 
 const person = new Person("Sam", "Green");
-Le code ci-dessus se connectera "Sam Green"à la console.
+Le code ci-dessus se connectera "Sam Green" à la console.
 
 
 //*****Capturer les paramètres du constructeur
@@ -104,7 +102,8 @@ class Person {
         this.votingAge = 18;
     }
 }
-Si ce qui précède n’est pas clair à 100 %, ne vous inquiétez pas. Cela devrait devenir plus clair dans le prochain chapitre une fois que nous aurons découvert les méthodes d'instance !
+Si ce qui précède n’est pas clair à 100 %, ne vous inquiétez pas. Cela devrait devenir plus clair dans le prochain chapitre une fois que nous aurons découvert les 
+méthodes d'instance !
 
 //******résumer
 
@@ -126,7 +125,7 @@ Voici une explication détaillée :
   méthode spéciale appelée lorsqu'une nouvelle instance de la classe est créée.
 - Le constructeur peut accepter des paramètres qui sont passés lors de la création de l'instance.
 - La phrase mentionne "capturer les paramètres du constructeur", ce qui signifie que ces paramètres sont enregistrés ou assignés à des variables membres de la classe, 
-  généralement à l'aide du mot-clé `this`.
+  généralement à l'aide du mot-clé `this`
 - Une fois que les paramètres sont capturés et assignés aux variables membres de la classe, ils peuvent être utilisés dans d'autres méthodes (fonctions) de cette même
   classe. Ces méthodes sont appelées méthodes d'instance car elles sont spécifiques à chaque instance de la classe et peuvent accéder aux données qui lui sont associées.
 
