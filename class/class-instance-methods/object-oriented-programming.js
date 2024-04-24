@@ -2,6 +2,8 @@
 //*********************************************************** Programmation orientée objet *******************************************************************************
 //*********************************************************************************************************************************************************************** 
 
+//*fichier 2
+
 Dernière mise à jour en février 2022
 
 Le code que vous avez écrit pour résoudre le dernier défi est un exemple de programmation orientée objet.
@@ -65,6 +67,7 @@ d'instance sur la classe. Cela signifie qu'une méthode d'instance peut appeler 
 
 class User {
   constructor(firstName, lastName) {
+    //les variables encapsulées sont nécessaire lorsqu'elle proviennent de données externes
     this.firstName = firstName;
     this.lastName = lastName;
   }
@@ -133,4 +136,19 @@ plus facilement.
 En utilisant des classes et des objets, vous pouvez créer des structures de données et des fonctionnalités qui reflètent plus fidèlement les relations 
 et les comportements du monde réel.
 
+*/
+
+/* 
+//******* récapitulatif du chapitre
+
+Les méthodes d'instance sont des fonctions qui peuvent être appelées sur une instance d'une classe.
+
+Pour pouvoir utiliser des variables d'instance dans une méthode d'instance, vous devez les préfixer avec this.(à condition qu'elles aient été capturées
+dans le constructor)
+
+À l’intérieur d’une méthode d’instance, this fait référence à l’instance actuelle de la classe.
+
+La programmation orientée objet (POO) consiste à décrire le monde réel avec des classes (que vous pouvez ensuite instancier, ce qui crée des objets).
+
+Une méthode d'instance peut appeler une autre méthode d'instance en utilisant la this.functionName()syntaxe.
 */
