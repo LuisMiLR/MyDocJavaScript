@@ -46,5 +46,5 @@ Remarquez comment nous pouvons définir la agepropriété sur l' userinstance en
 Dans cet exemple, nous le définissons sur une chaîne "18", qui est ensuite convertie en nombre par le setter. 
 Ainsi, le paramètre user.age = appellera la set age(value)fonction et valuerecevra la chaîne "18".
 
-Ce setter créera ensuite une nouvelle variable d'instance appelée _ageet la définira sur 18(sous forme de nombre). 
+Ce setter créera ensuite une nouvelle variable d'instance appelée _age et la définira sur 18(sous forme de nombre). 
 */
