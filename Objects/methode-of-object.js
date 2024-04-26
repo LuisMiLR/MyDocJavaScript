@@ -1,41 +1,3 @@
-//****************************************************************** Object *********************************************************************************************
-//***********************************************************************************************************************************************************************
-
-//********définition
-/* 
-Un objet est une antité qui possède des propriétés et des méthodes 
-- Chaque propriété définit une caractèristique, une information de l'objet (ex: la couleur)
-- Chaque méthode défini un comportement, une action de l'objet (ex: ecrire)
-*/
-
-//un object sert à stocker des propriétés alors qu'un tableau sert à stocker une liste par ex liste d'animaux
-//L'object sert à stocker les caractéristique de l'animal
-
-//les accolades {} pour déclarer le contenu d'un objet
-//des paires clé / valeur séparées par des virgules
-
-const myDog = {
-  name: "Rex",
-  colors: ["white", "black"],
-};
-
-//deux façon d'afficher la valeur d'un objet
-console.log(myDog.name); // affichera Rex
-console.log(myDog["name"]); // affichera Rex
-
-//⚠️ Lorsque l'on souhaite accéder à la propriété d'un objet dont le nom contient un ou plusieurs espaces,
-//il est obligatoire d'utiliser les crochets []
-
-//Pour ajouter une paire clé/valeur à un objet
-mydog.age = 3;
-
-// Pour supprimer une propriété d'un objet on utilise
-delete myDog.age;
-/* l'utilisation de delete n'est pas toujours nécessaire ou recommandée.
-Pour simplement supprimer la valeur d'une propriété sans supprimer la propriété elle-même,
-il peut être plus approprié de définir la valeur de la propriété à undefined ou null.
-Cela dépend du contexte et de la logique de votre application. */
-
 //******************************************************************** Méthodes sur objet ********************************************************************************
 
 //****Object.keys(obj)****
@@ -162,7 +124,6 @@ le nombre en une chaîne de caractères.
 
 La méthode `toString()` est principalement utilisée pour les objets, car elle fournit une représentation sous forme de chaîne de caractères de l'objet. 
 Elle est donc appelée lors de l'affichage d'objets avec `console.log()`. */
-
 
 //******** ASTUCE DE DEBUGAGE
 
