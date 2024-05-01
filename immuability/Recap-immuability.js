@@ -21,4 +21,8 @@ Cela fonctionne en répartissant les éléments dans un nouveau tableau.
 Vous pouvez ajouter de manière immuable un élément à un tableau comme ceci :[...originalArray, newItem]
 Vous pouvez créer une copie d'un objet à l'aide de l' ...opérateur :{...originalObject}
 Vous pouvez mettre à jour une propriété existante :{...originalObject, property: 'newValue'}
+
+Un objet immuable est un objet qui ne peut pas être modifié. 
+Comme nous ne pouvons pas modifier un objet immuable, nous créons un objet entièrement nouveau basé sur 
+l'original, laissant l'objet original inchangé.
 */
