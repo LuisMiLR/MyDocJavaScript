@@ -150,9 +150,9 @@ voir information complémentaire )
 
 
 //******* résumer
-La définition de getters et de setters dans une classe est principalement utilisée pour valider ou modifier certaines valeurs avant qu'elles ne soient définies comme propriétés sur une classe.
-En supposant une instance user, l'accès user.ageappellera get age()si le getter existe.
-En supposant une instance user, le paramètre user.age = appellera set age(value)si le setter existe.
-Lors de la création de getters et de setters, assurez-vous de préfixer la nouvelle variable d'instance avec an _pour éviter de créer une boucle infinie.
+- La définition de getters et de setters dans une classe est principalement utilisée pour valider ou modifier certaines valeurs avant qu'elles ne soient définies comme propriétés sur une classe.
+- En supposant une instance user, l'accès user.ageappellera get age()si le getter existe.
+- En supposant une instance user, le paramètre user.age = appellera set age(value)si le setter existe.
+- Lors de la création de getters et de setters, assurez-vous de préfixer la nouvelle variable d'instance avec an _pour éviter de créer une boucle infinie.
 
 */
