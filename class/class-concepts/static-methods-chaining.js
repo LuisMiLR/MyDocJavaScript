@@ -80,4 +80,69 @@ et qui vous aideront à décider si la méthode doit être statique :
 
 - La méthode n'accède-t-elle à aucune variable d'instance de cette classe ? Si oui, cela devrait probablement être le cas static.
 Nous discuterons des cas d'utilisation de méthodes statiques dans les frameworks/bibliothèques front-end.
+
+
+//*Static methods cannot access this.
+
+Étant donné que les méthodes statiques sont appelées sur la classe et non sur une instance, elles ne peuvent pas accéder aux variables d'instance ou aux méthodes 
+d'instance. Ainsi, vous ne pouvez pas utiliser this.l’intérieur d’eux.
+Si vous avez besoin d’utiliser this.une static méthode à l’intérieur, cela signifie que cela ne devrait pas l’être static.
+
+
+//***** Method chaining 
+
+/* Vous pouvez parfois rencontrer du chaînage de méthodes, qui est une méthode appelée sur le résultat d’une autre méthode. Par exemple, en supposant une 
+classeCourse :
+*/
+const course = new Course("Learn JavaScript", false);
+course.markAsCompleted().setGrade(18).requestCertificate();
+/*
+
+Remarquez comment nous invoquons setGrade(18)le résultat de .markAsCompleted(). De même, nous faisons appel .requestCertificate()au résultat de setGrade(18).
+
+Pour que cela fonctionne, ces méthodes d'instance doivent toujours renvoyer this. La référence à l’instance actuelle. Ce faisant, vous pouvez appeler d'autres méthodes sur l'instance car elles renvoient l'instance actuelle.
+
+Donc au lieu d'écrire ceci :
+*/
+
+course.markAsCompleted();
+course.setGrade(18);
+course.requestCertificate();
+
+//Vous pouvez enchaîner les appels de méthode, car chaque méthode renvoie this, ce qui dans cet exemple est l'équivalent de course(l'instance actuelle) :
+
+course.markAsCompleted().setGrade(18).requestCertificate();
+
+//Pour que cela fonctionne, vous devez vous assurer que ces méthodes d'instance renvoientthis :
+
+class Course {
+  constructor(name, isCompleted) {
+    this.name = name;
+    this.isCompleted = isCompleted;
+  }
+
+  markAsCompleted() {
+    this.isCompleted = true;
+    return this; // allows method chaining
+  }
+
+  setGrade(grade) {
+    this.grade = grade;
+    return this; // allows method chaining
+  }
+
+  requestCertificate() {
+    this.askedForCertificate = true;
+    return this; // allows method chaining
+  }
+}
+/*
+
+//****** résumer
+
+- Les méthodes statiques sont appelées directement sur la classe et ne peuvent pas être appelées sur une instance.
+- Le résultat d’une méthode est-il le même dans toutes les instances de la classe ? Si oui, alors ça devrait l'être static.
+- La méthode n'accède-t-elle à aucune variable d'instance de cette classe ? Si oui, cela devrait probablement être le cas static.
+- Le chaînage de méthodes est possible lorsque la méthode d'instance renvoie this.
+
 */
