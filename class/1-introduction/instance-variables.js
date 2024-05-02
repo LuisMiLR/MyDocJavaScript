@@ -35,7 +35,7 @@ const person = new Person; // () are optional when there are no arguments
 
 Le code ci-dessus se connectera "I was automatically called" à la console.
 
-Si le constructeur attend certains paramètres, vous pouvez transmettre certains arguments à l' new Person(...)appel. Ces arguments seront transmis au constructeur. 
+Si le constructeur attend certains paramètres, vous pouvez transmettre certains arguments à la new Person(...) appel. Ces arguments seront transmis au constructeur. 
 Par exemple:
 
 /// class definition
@@ -54,11 +54,11 @@ Le code ci-dessus se connectera "Sam Green" à la console.
 
 //*****Capturer les paramètres du constructeur
 
-Lorsque l'on appelle new Person("Sam", "Green"), les valeurs "Sam"et "Green"sont disponibles respectivement au fur et à mesure firstNameet lastNamedans la 
+Lorsque l'on appelle new Person("Sam", "Green"), les valeurs "Sam"et "Green"sont disponibles respectivement au fur et à mesure firstName et lastName dans la 
 fonction constructor.
 
 Cependant, ces variables firstName et lastName ne seront pas disponibles dans les autres méthodes de cette classe (que nous découvrirons dans le chapitre suivant). 
-Ils ne seront disponibles que dans leconstructor .
+Ils ne seront disponibles que dans le constructor .
 
 C'est pourquoi, nous pouvons les capturer et les enregistrer en tant que //*variables d'instance :
 
@@ -86,9 +86,8 @@ d'instance (nous en apprendrons davantage dans le chapitre suivant).
 Alors, qu’est-ce qu’une variable d’instance ?
 Une variable d'instance est une variable qui appartient à une instance spécifique d'une classe.
 
-Une variable d'instance est accessible dans n'importe quelle méthode d'instance. De plus, les variables d'instance ne doivent pas nécessairement être créées 
+Une variable d'instance est accessible dans n'importe quelle méthode d'instance. De plus, les variables d'instance ne doivent pas nécessairement être crées 
 en capturant un paramètre de constructeur. Par exemple:
-
 
 /// class definition
 
@@ -107,25 +106,76 @@ méthodes d'instance !
 
 //******résumer
 
-La convention courante pour le nom de la classe est UpperCamelCase .
+La convention courante pour le nom de la classe est UpperCamelCase.
+
 Nous capturons les paramètres du constructeur afin de pouvoir y accéder en dehors du constructeur (dans les méthodes d'instance).*
+
 Une variable d'instance est une variable qui appartient à une instance spécifique d'une classe.
-Est-ce que cela a été utile?
+
+explication :
+Prenons l'exemple d'une classe Person :
+
+class Person {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+}
 
 
+Prenons l'exemple d'une classe Person :
+
+
+class Person {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+}
+
+Maintenant, si nous créons deux instances de cette classe, person1 et person2 :
+
+const person1 = new Person("Alice", 25);
+const person2 = new Person("Bob", 30);
+
+Chaque instance a ses propres données distinctes (name et age) qui lui sont propres. Par exemple, person1 a un name de "Alice" et un age de 25, tandis que person2 a un
+ name de "Bob" et un age de 30.
+
+Lorsque nous disons qu'une variable est une variable d'instance dans le contexte d'une classe, cela signifie qu'elle est associée à une instance particulière de cette
+classe. Dans notre exemple, name et age sont des variables d'instance de la classe Person.
+
+En d'autres termes, chaque instance de la classe Person possède ses propres variables name et age, qui peuvent avoir des valeurs différentes pour chaque instance. 
+Les variables d'instance sont distinctes pour chaque instance de la classe.
 
 
 *capturer les paramètres du contructeur afin de pouvoir y accéder... : 
+
 Cette phrase fait référence à la pratique courante dans la programmation orientée objet où les paramètres passés au constructeur d'une classe sont capturés et stockés 
 dans des variables membres de la classe. Ces variables membres sont ensuite accessibles dans d'autres méthodes de cette même classe.
+
+mais si je ne passe pas de parametres au construteur :
+
+class Person {
+    constructor() {
+        this.name = "John"; // Initialisation d'une variable membre avec une valeur par défaut
+        this.age = 30;      // Initialisation d'une autre variable membre avec une valeur par défaut
+    }
+}
+Dans cet exemple, bien que le constructeur n'ait pas de paramètres, les valeurs par défaut "John" et 30 sont capturées implicitement lorsque vous créez une nouvelle 
+instance de Person sans arguments :
+
+const person = new Person();
 
 Voici une explication détaillée :
 
 - Lorsque vous créez une classe en JavaScript (ou dans d'autres langages de programmation orientée objet), vous pouvez définir un constructeur. Ce constructeur est une 
   méthode spéciale appelée lorsqu'une nouvelle instance de la classe est créée.
+
 - Le constructeur peut accepter des paramètres qui sont passés lors de la création de l'instance.
+
 - La phrase mentionne "capturer les paramètres du constructeur", ce qui signifie que ces paramètres sont enregistrés ou assignés à des variables membres de la classe, 
   généralement à l'aide du mot-clé `this`
+  
 - Une fois que les paramètres sont capturés et assignés aux variables membres de la classe, ils peuvent être utilisés dans d'autres méthodes (fonctions) de cette même
   classe. Ces méthodes sont appelées méthodes d'instance car elles sont spécifiques à chaque instance de la classe et peuvent accéder aux données qui lui sont associées.
 

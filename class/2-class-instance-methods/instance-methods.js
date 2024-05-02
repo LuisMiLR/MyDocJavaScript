@@ -24,12 +24,12 @@ class Person {
 const person = new Person("Sam", "Green");
 console.log(person.getFullName()); // "Sam Green"
 
-/* getFullName() s'agit d'une méthode d'instance. Nous l'écrivons dans la définition de la classe, puis nous pouvons l'appeler sur une instance (par exemple 
+/* getFullName() est une méthode d'instance. Nous l'écrivons dans la définition de la classe, puis nous pouvons l'appeler sur une instance (par exemple 
 la variable person).
 
-Vous ne pouvez pas appeler Person.getFullName(). Pour que cela fonctionne, getFullName()il faut une méthode statique. Ceci est expliqué dans le chapitre suivant.
+(Vous ne pouvez pas appeler Person.getFullName(). Pour que cela fonctionne, getFullName() il faut une méthode statique. Ceci est expliqué dans le chapitre suivant)
 
-Cela ne fonctionne que sur les instances, c'est pourquoi cela fonctionne  car person cette variable a été affectée à new Person(...) . 
+Cela ne fonctionne que sur les instances, c'est pourquoi cela fonctionne  car à  la variable person a été affectée à new Person(...) . 
 
 
 //*****Accéder aux variables d'instance
@@ -51,7 +51,7 @@ class Person {
     }
 
     getFullName() {
-        // ❌ this does NOT work
+        /// ❌ this does NOT work
         return `${firstName} ${lastName}`;
     }
 }
@@ -61,7 +61,7 @@ class Person {
 ? simplement `firstName` et `lastName` sans les préfixer par `this`, ce qui signifie que JavaScript tente de trouver des variables
 ? globales `firstName` et `lastName`, ce qui n'est pas le cas. 
 
-C'est la raison pour laquelle nous avons appris à capturer constructorles paramètres dans le chapitre précédent, car cela nous permettra d'utiliser les valeurs 
+C'est la raison pour laquelle nous avons appris à capturer constructor les paramètres dans le chapitre précédent, car cela nous permettra d'utiliser les valeurs 
 que nous avons capturées en les définissant comme variables d'instance.
 
 C'est à cela que this fait référence le mot-clé. Cela fait référence à l'instance actuelle de la classe.

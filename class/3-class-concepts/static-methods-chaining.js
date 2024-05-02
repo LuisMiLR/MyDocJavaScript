@@ -2,6 +2,8 @@
 //*********************************************************************************************************************************************************************
 
 /* 
+*fichier 2
+
 Nous avons vu dans le chapitre précédent que les méthodes d'instance sont des méthodes que l'on peut appeler sur une instance d'une classe 
 (ex le résultat de new ClassName()).
 
