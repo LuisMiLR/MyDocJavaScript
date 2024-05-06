@@ -24,4 +24,7 @@ ce qui signifie qu'il peut stocker des entiers de taille supérieure à ce que l
 
 
 Ces valeurs primitives sont stockées directement dans la pile de mémoire, ce qui les rend plus rapides à manipuler que les objets, qui sont généralement stockés dans le tas de mémoire.
+
+Un type de données non primitif :
+object pour des structures de données plus complexes.
 */

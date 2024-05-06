@@ -8,13 +8,14 @@
 // la substring méthode.
 
 //****subString signature
+
 // Une signature de fonction vous donne une explication des paramètres que vous devez transmettre pour cette méthode. Jetons
 // un coup d'oeil à la signature de substring:
 
 someString.substring(indexStart, indexEnd);
 
 // Cela signifie que lorsque vous appelez substring, vous pouvez lui donner 2 paramètres, le premier pour le indexStartet le second
-//pourindexEnd .
+//pourindexEnd.
 // indexStart: la position du premier caractère que vous souhaitez inclure
 // indexEnd: la position du premier caractère que vous souhaitez ignorer
 
