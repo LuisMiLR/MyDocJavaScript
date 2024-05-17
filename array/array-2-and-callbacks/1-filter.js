@@ -11,11 +11,12 @@ const numbersAboveTen = numbers.filter(function (number) {
   return number > 10;
 });
 console.log(numbersAboveTen); // [14, 11]
-///Ne pas oublier pas le mot-clé return à l'intérieur de la fonction de rappel .
+
+//*Ne pas oublier pas le mot-clé return à l'intérieur de la fonction de rappel .
 /* 
 
 
-Array.filter (rappel)
+//*Array.filter (rappel)
 Voyons comment fonctionne le code ci-dessus en décomposant son exécution étape par étape.
 
 La .filter()méthode attend un rappel comme premier argument. Dans notre exemple, le rappel est : */

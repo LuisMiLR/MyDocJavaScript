@@ -1,6 +1,6 @@
 /* More array methode 
 
-///////////// Array map
+//******* Array map
 
 
 La .map(callback)méthode permet de transformer un tableau en un autre. 
@@ -39,7 +39,7 @@ donc le résultat final sera [undefined, undefined].
 Une fois que vous faites cette erreur plusieurs fois, cela devient un signal clair que vous avez oublié le mot-clé return. 
 
 
-//////////////////////////Array includes(item)
+//**************** Array includes(item)
 
 La .includes(item)méthode tableau est l'une des méthodes tableau les plus simples car elle nécessite un itemrappel plutôt qu'un rappel 
 et renvoie true lorsqu'il item existe dans le tableau et false autrement. Voici un exemple :
@@ -50,7 +50,9 @@ const groceries = ["Apple", "Peach", "Tomato"];
 groceries.includes("Tomato"); // true
 groceries.includes("Bread"); // false
 
-/*  Array join(glue) jointure de tableau colle 
+/*  
+
+//*************** Array join(glue) 
 
 Lorsque vous avez un tableau et que vous affichez ce tableau sur une page Web (comme nous le verrons plus tard dans la section DOM 
 du cours), le tableau sera automatiquement converti en chaîne. JavaScript invoquera automatiquement la .toString()méthode du tableau 
@@ -69,7 +71,8 @@ const groceriez = ["Apple", "Peach", "Tomato"];
 groceriez.join("; "); // "Apple; Peach; Tomato"
 groceriez.join(" . "); // "Apple . Peach . Tomato"
 
-/* résumer
+/* 
+//*************** résumer
 La méthode array .map(callback)permet de transformer un tableau en un autre.
 .includes(item)La méthode tableau prend un itemet renvoie truelorsqu'il itemexiste dans le tableau et falseautrement.
 La méthode array .join(glue)renvoie une chaîne d'éléments du tableau séparés par le glue. */

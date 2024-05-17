@@ -47,7 +47,7 @@ Nous invoquons la fonction une 2eme fois cette fois ci les arguments sont 42 et 
 il est possible de passer en argument toute valeur JS (primitives et tout object, notament des fonctions)
 */
 
-// *! a noter les primitives sont passées par valuer et les objets par référence, comme pour les assignations !
+// *! A noter les primitives sont passées par valeur et les objets par référence, comme pour les assignations !
 
 //*********l'expression de fonction
 

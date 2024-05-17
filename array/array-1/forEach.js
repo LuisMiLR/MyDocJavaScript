@@ -1,4 +1,4 @@
-//forEach pour chaque
+//forEach (pour chaque)
 
 /* la méthode forEach() est utilisée pour parcourir chaque  élément d'un tableau */
 /* L'itération de tableau est l'un des concepts les plus importants que vous utiliserez en JavaScript.
@@ -75,9 +75,10 @@ grades.forEach(function (x) {
 Même si cela fonctionne, vous devez toujours donner des noms de variables clairs. Nous en parlerons plus dans la prochaine leçon !
  */
 
-/* /////////////////CALL BACK FUNCTON revient à laisser un numéro de téléphone pour que quelqu'un vous rappelle lorsqu'il est prêt. En JavaScript, vous fournissez une fonction de rappel comme argument, qui est appelée lorsque la fonction principale est prête à envoyer le résultat . */
+/*CALL BACK FUNCTON revient à laisser un numéro de téléphone pour que quelqu'un vous rappelle lorsqu'il est prêt. En JavaScript, vous fournissez une fonction de rappel comme argument, qui est appelée lorsque la fonction principale est prête à envoyer le résultat . */
 
-/* résumer
+/* 
+//******************** résumer
 .forEach(callback)parcourt chaque élément d'un tableau.
 Un rappel est une définition de fonction passée en argument à une autre fonction.
 Commencez toujours par un console.log()intérieur .forEach()pour visualiser le passage d'un tableau à un élément du tableau 

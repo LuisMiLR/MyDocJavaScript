@@ -31,16 +31,18 @@ rappel sera rappelé avec la prochaine valeur de name. Cette fois, name = "Alex"
 Remarquez que même s'il y a 2 nombres qui satisfont à la condition, la .find()méthode s'arrête au premier qui satisfait la condition.
 
 
-
 Cela nous amènera à la section suivante, qui est .filter()vs .find(). Quelles sont les différences?
 
-////////////.filter() VS .find()
-Quelle est la différence entre .filter()et .find()?
+
+//*******.filter() VS .find()
+
+Quelle est la différence entre .filter() et .find()?
 
 La différence réside dans le type de retour de ces 2 méthodes :
 
-La .filter()méthode renvoie toujours un tableau.
-La .find()méthode renvoie le premier élément du tableau qui correspond à la condition de rappel ou undefined.
+La .filter() méthode renvoie toujours un tableau.
+
+La .find() méthode renvoie le premier élément du tableau qui correspond à la condition de rappel ou undefined.
 Jetons un coup d'œil à quelques exemples :
 */
 const numbers = [9, 5, 14, 3, 11];
