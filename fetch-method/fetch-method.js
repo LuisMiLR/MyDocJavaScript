@@ -8,9 +8,9 @@ function translate(textToTranslate) {
 2. Déclarez une structure `try...catch` pour gérer les erreurs potentielles :
 
 try {
-    // Code qui peut générer une erreur
+    /// Code qui peut générer une erreur
 } catch (error) {
-    // Gestion des erreurs
+    /// Gestion des erreurs
 }
 
 3. À l'intérieur du bloc `try`, effectuez la requête `fetch` vers l'API de traduction :

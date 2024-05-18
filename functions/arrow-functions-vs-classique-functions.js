@@ -32,7 +32,7 @@ const add2 = (a, b) => a + b;
 
 avec la fonction classique j'y ai accès avant! parce qu'elle s'est fait hoistind (issé) avant
 
-*Regles = 
+//********** Regles  
 *Les variables se font hoisting et on leur donne une valeur undefined jusqu'au moment qu'elle sont initialiser 
 *Les fonctions se font hoisting et sont directeement accéssible des la premiere ligne de code
 */
