@@ -125,6 +125,50 @@ le nombre en une chaîne de caractères.
 La méthode `toString()` est principalement utilisée pour les objets, car elle fournit une représentation sous forme de chaîne de caractères de l'objet. 
 Elle est donc appelée lors de l'affichage d'objets avec `console.log()`. */
 
+
+//************* Object shorthand */
+
+/*
+Une fonctionnalité intéressante des objets est le raccourci objet. Supposons que vous ayez une variable ageet que vous souhaitiez créer un objet avec une clé ageet que sa valeur soit une variable age:
+*/
+
+const age = 18;
+const personn = {
+    name: "John",
+    age: age
+}
+
+//C'est age: ageun peu redondant ; vous pouvez donc l'écrire comme suit :
+
+const ages = 18;
+const persone = {
+    name: "John",
+    age
+}
+
+/*
+Étant donné que le nom de la propriété est le même que le nom de la variable utilisée comme valeur, vous pouvez alors supprimer le : agepour ne conserver que age . 
+*/
+
+//autre exemple : 
+const isAdmin = false;
+const darkMode = true;
+
+const settingse = {
+    isAdmin,
+    darkMode
+};
+
+console.log(settings); //{isAdmin: false, darkMode: true} 
+
+
+
+
+
+
+
+
+
 //******** ASTUCE DE DEBUGAGE
 
 //Le raccourci d’objet peut être utilisé comme une astuce de débogage très utile. Disons que vous avez le code suivant :
@@ -155,3 +199,4 @@ const sum2 = (a, b) => {
 sum2(1, 3);
 // le raccourci d’objet vous permet de spécifier uniquement la clé
 //L'avantage ici est qu'au lieu de vous connecter a, vous vous connectez{a: a}
+

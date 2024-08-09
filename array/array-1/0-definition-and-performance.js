@@ -1,5 +1,3 @@
-//Intro Array
-
 /* DÉFINITION 
 Un tableau en JavaScript est une structure de données permettant de stocker plusieurs valeurs. Ces valeurs peuvent être de types différents. Chaque élément 
 d'un tableau est accessible à partir de son index (tab[index] = valeur).

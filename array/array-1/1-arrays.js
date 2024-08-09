@@ -56,10 +56,8 @@ Ceci est souvent déroutant pour de nombreux développeurs, c'est pourquoi nous 
 
 
 //*********** Arrays & const
-
-
-Même si la variable numbersa été définie avec const, nous avons pu y insérer de nouvelles données.
-Cela signifie que constvous ne pouvez attribuer la variable qu'une seule fois lorsqu'elle est définie. 
+Même si la variable numbers a été définie avec const, nous avons pu y insérer de nouvelles données.
+Cela signifie que const vous ne pouvez attribuer la variable qu'une seule fois lorsqu'elle est définie. 
 Mais cela ne veut pas dire que la variable est immuable. Son contenu peut changer.
 
 Quel est l'avantage de le déclarer comme const vous le demandez ? L'avantage est qu'une fois que vous l'avez défini comme un tableau, 
