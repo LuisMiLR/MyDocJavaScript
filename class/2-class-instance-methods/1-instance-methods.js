@@ -4,7 +4,7 @@
 
 /* 
 
-Nous avons déjà parlé de la façon dont les classes regroupent les fonctionnalités communes. Ceci est réalisé en définissant des méthodes d’instance.
+Nous avons déjà évoqué la manière dont les classes regroupent les fonctionnalités communes. Ceci est réalisé en définissant des méthodes d’instance.
 
 Les méthodes d'instance sont des fonctions qui peuvent être appelées sur une instance d'une classe. Prenons un exemple : */
 
@@ -39,7 +39,7 @@ des méthodes d'instance, tout comme nous l'avons fait ici dans cet exemple.
 
 La getFullName() méthode d'instance utilise les variables d'instance this.firstName et this.lastName.
 
-Ainsi, les variables d'instance sont accessibles dans toutes les méthodes d'instance .
+Ainsi, les variables d'instance sont accessibles dans toutes les méthodes d'instance.
 
 Le code ci-dessous ne fonctionne pas , car firstName et lastName n'est pas défini :
 

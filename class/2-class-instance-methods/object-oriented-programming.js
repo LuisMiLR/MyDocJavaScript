@@ -7,7 +7,7 @@
 Dernière mise à jour en février 2022
 
 Le code que vous avez écrit pour résoudre le dernier défi est un exemple de programmation orientée objet.
-La programmation orientée objet (POO) consiste à décrire le monde réel avec des classes (que vous pouvez ensuite instancier, ce qui crée des objets) .
+La programmation orientée objet (POO) consiste à décrire le monde réel avec des classes (que vous pouvez ensuite instancier, ce qui crée des objets).
 
 Par exemple, la solution du défi précédent :
 
@@ -36,6 +36,7 @@ console.log(user1.canVote()); // true
 const user2 = new User("Alex", "Green", "Mr", 17);
 console.log(user2.getFullName()); // "Mr. Alex Green"
 console.log(user2.canVote()); // false
+
 Comparez cela à la manière procédurale de le résoudre (sans classes) :
 
 
@@ -60,7 +61,9 @@ Le regroupement constitue la comparaison la plus évidente entre les deux approc
 supplémentaires telles que les getters, les setters, les méthodes statiques, l'héritage, etc. 
 Nous les aborderons dans les chapitres suivants .
 
-Appeler une méthode d'instance à partir d'une autre
+
+*Appeler une méthode d'instance à partir d'une autre
+
 Nous avons vu dans la leçon précédente qu'une méthode d'instance a accès aux variables d'instance définies sur la classe. Ils ont également accès à d'autres méthodes
 d'instance sur la classe. Cela signifie qu'une méthode d'instance peut appeler une autre méthode d'instance en utilisant la this.functionName()syntaxe. Par exemple:
 */

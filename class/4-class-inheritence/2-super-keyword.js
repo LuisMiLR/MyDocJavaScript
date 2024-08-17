@@ -47,7 +47,8 @@ class Manager {
 /* 
 Comment pouvons-nous utiliser l’héritage dans cet exemple ? Les constructeurs ne sont plus les mêmes.
 
-C'est ici que nous pouvons utiliser le super mot-clé, qui permet d'appeler des fonctions sur la classe parent.
+La chose à savoir ici est que nous devons utiliser le mot clef super() qui permet d’appeler le constructeur parent dans le constructor() de notre classe fille afin que les propriétés soient correctement initialisées.
+
 */
 
 class Employee {
@@ -128,4 +129,6 @@ Le super mot-clé est utilisé pour appeler des fonctions sur la classe parent.
 Lorsque vous remplacez le constructor(), assurez-vous d'appeler super() en premier avant d'accéder à toute autre variable d'instance.
 
 Vous pouvez également appeler des fonctions sur la classe parent en utilisant le super mot-clé, par exemple super.parentMethodName()
+
+On peut ensuite créer des objets à partir de notre classe fille. Les objets vont également avoir accès aux propriétés et méthodes de la classe mère.
  */

@@ -1,14 +1,16 @@
 //*********************************************************************** instance Variables ***************************************************************************
 //**********************************************************************************************************************************************************************
 
-/* (Les variables d'instances) 
+/* 
+*Les variables d'instances
+
 Dans cette leçon, nous verrons comment définir vos propres variables de classe et d'instance.
 
 //******Définissez votre propre classe
 
 Pour définir une classe, vous devez commencer par le class keyword "new" suivi du nom de la classe.
 
-La convention courante pour le nom de la classe est UpperCamelCase. Voici quelques exemples:
+La convention courante pour le nom de la classe est UpperCamelCase (connu également sous PascalCase) Voici quelques exemples:
 
 Une classe représentant une recette doit s’appeler Recipe.
 Une classe représentant une recette rapide doit s'appeler QuickRecipe.
@@ -18,6 +20,10 @@ class QuickRecipe {
 }
 
 //******Constructeur
+
+Dans notre classe, on définit une méthode constructor() qui va nous servir à initialiser les propriétés des objets créés par la suite à partir de la classe avec les valeurs courantes des objets.
+
+Sous la méthode constructeur, nous allons définir des méthodes de classe auxquelles les objets auront accès.
 
 Lorsque vous créez une nouvelle instance d'une classe, la fonction constructor() sera automatiquement appelée. Par exemple:
 
@@ -29,7 +35,9 @@ class Person {
     }
 }
 
-/// class usage
+*class usage
+
+Une fois notre définition de classe complète, on va pouvoir créer des objets à partir de celle-ci de la même manière que précédemment, c’est-à-dire en utilisant le mot clef new suivi du nom de la classe. On dit qu’on instancie la classe.
 
 const person = new Person; // () are optional when there are no arguments
 
@@ -123,15 +131,6 @@ class Person {
 }
 
 
-Prenons l'exemple d'une classe Person :
-
-
-class Person {
-    constructor(name, age) {
-        this.name = name;
-        this.age = age;
-    }
-}
 
 Maintenant, si nous créons deux instances de cette classe, person1 et person2 :
 

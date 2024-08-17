@@ -5,7 +5,7 @@
 *fichier 1
 (Dernière mise à jour en mars 2023)
 
-Ce chapitre explique les concepts de classe qui sont relativement moins utilisés par rapport à ceux que nous avons déjà vus auparavant.
+Ce chapitre explique les concepts de classe.
 
 //****** Setter
 
