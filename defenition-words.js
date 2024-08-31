@@ -99,9 +99,10 @@ programmation fonctionnelle et la création de variables privées.
 Les fonctions de première classe en JavaScript sont des fonctions qui peuvent être traitées comme n'importe quelle autre valeur. Cela signifie qu'ils peuvent être 
 affectés à des variables, passés comme arguments à d'autres fonctions, renvoyés par des fonctions et stockés dans des structures de données. 
 
-//*What is the Difference Between Function Statement and Function Expression? - Quelle est la différence entre une instruction de fonction et une expression de fonction ?
+//*What is the Difference Between Function Statement and Function Expression? - Quelle est la différence entre une déclaration  de fonction et une expression de fonction ?
 Une instruction de fonction , également appelée déclaration de fonction, est définie à l'aide du mot-clé `function` suivi d'un nom et d'un bloc de code. Il est 
-hissé, c'est-à-dire qu'il est accessible avant sa déclaration effective dans le code.
+hissé, c'est-à-dire qu'il est accessible avant sa déclaration effective dans le code. (hosting)
+
 Une expression de fonction , en revanche, définit une fonction dans le cadre d'une expression, généralement en l'attribuant à une variable. Les expressions de 
 fonction ne sont pas hissées comme les déclarations de fonction.
 

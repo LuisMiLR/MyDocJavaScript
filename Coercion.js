@@ -19,7 +19,6 @@ d'évaluation d'une condition, dans une instruction if, des opérations arithmé
 
 Par exemple, lors de l'évaluation d'une condition dans une instruction if, JavaScript peut automatiquement convertir les valeurs pour les comparer
 
-
 La coercition implicite se produit automatiquement lors d'opérations entre des types différents, souvent dans des situations telles que l'opérateur d'égalité simple (`==`), la coercition implicite peut également se produire dans d'autres contextes, notamment :
 
 1. **Opérations arithmétiques** : 
@@ -40,7 +39,6 @@ Lorsqu'une valeur non booléenne est utilisée dans un contexte où JavaScript a
 effectue une conversion automatique pour déterminer si la valeur est considérée comme `true` ou `false`.
 
 Dans tous ces cas, la coercition implicite peut se produire lorsque JavaScript convertit automatiquement les valeurs pour permettre l'exécution des opérations ou l'évaluation des expressions.
-
 
 exemple l'opérateur d'égalité simple (==). Lorsque des types différents sont comparés, JavaScript tente de les convertir pour rendre la comparaison possible.
 
