@@ -1,4 +1,4 @@
-//****Coercition de Type en JavaScript
+//****Coercion de Type en JavaScript
 
 /* 
 La coercition de type est le processus de conversion automatique des valeurs d'un type de données à un autre lorsqu'elles sont utilisées dans des opérations ou 
@@ -11,7 +11,7 @@ en nombres.
 Il y a aussi des cas où nous devons convertir explicitement une valeur pour corriger les choses.
 
 
-//*************************************************************** 1. Coercition implicite ********************************************************************************
+//*************************************************************** 1. Coercion implicite ********************************************************************************
 //************************************************************************************************************************************************************************ 
 
 la coercion implicite est le processus de conversion automatique, des valeurs d'un type de données à un autre, lorsqu'elle sont utilisées dans des opérations 
@@ -73,6 +73,11 @@ La conversion numérique dans les fonctions et expressions mathématiques s’ef
 Par exemple, lorsque la division `/` est appliqué à des non-numéros :
 */
 alert("6" / "2"); // 3, les chaînes de caractères sont converties en nombres
+
+//exemple autre
+let resultBoolean = true + 1 
+
+console.log(resultBoolean) // 2
 
 //************************************************************** 2. Coercition explicite *********************************************************************************
 //***********************************************************************************************************************************************************************

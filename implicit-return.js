@@ -25,7 +25,7 @@ const sums = (a, b) => a + b;
 sums(1, 3); // 4
 
 /* Alors, comment se fait-il que cet exemple fonctionne et que le précédent ne fonctionne pas ? Ni l’un ni l’autre n’incluent 
-le return mot-clé. L'un d'eux fonctionne et l'autre revient indéfini. En effet, pour le retour implicite au travail, vous devez 
+le return mot-clé. L'un d'eux fonctionne et l'autre revient indéfini. En effet, pour le retour implicite fonctionne, vous devez 
 remplir toutes les conditions suivantes :
 
 1 Votre fonction doit être une fonction fléchée.
@@ -49,15 +49,17 @@ const isLegals = (age) => age >= 18;
 
 /* La syntaxe peut paraître bizarre au début, mais une fois que vous vous y serez habitué, vous vous rendrez compte qu'elle est 
 vraiment élégante. Voici comment vous pouvez le lire :
-isLegal est une fonction qui prend l'âge et renvoie le résultat de l'expression age >= 18. 
 
-***************** N'utilisez le retour implicite que lorsque le corps de la fonction est court et d'une seule ligne. Ne sacrifiez 
-jamais la lisibilité et la clarté du code pour utiliser une certaine fonctionnalité .
+isLegal est une fonction qui prend l'âge et retourne le résultat de l'expression age >= 18. 
+
+**************** N'utilisez le retour implicite que lorsque le corps de la fonction est court et d'une seule ligne. 
+Ne sacrifiez jamais la lisibilité et la clarté du code pour utiliser une certaine fonctionnalité .
 
 Le retour implicite ne fonctionne que lorsqu'il y a une seule instruction à l'intérieur de la fonction (et que les accolades et return 
 le mot-clé sont omis).
 
 Aller plus loin
+
 Comme mentionné dans le chapitre précédent, lorsque vous n'avez qu'un seul paramètre, vous pouvez supprimer les parenthèses autour 
 du paramètre. Le code ci-dessus devient :
 */
@@ -65,9 +67,14 @@ du paramètre. Le code ci-dessus devient :
 const isLegalz = (age) => age >= 18;
 
 /* résumer
+
 Voici les conditions de retour implicite :
+
 Votre fonction doit être une fonction fléchée.
 Le corps de la fonction ne doit être qu'une seule instruction . Cela signifie que vous devez supprimer les accolades.
-Vous devez supprimer le returnmot-clé car le corps de la fonction est une seule instruction.
+
+Vous devez supprimer le return mot-clé car le corps de la fonction est une seule instruction.
+
 N'utilisez le retour implicite que lorsque le corps de la fonction est court et d'une seule ligne. Ne sacrifiez jamais la lisibilité et la clarté du code pour utiliser une certaine fonctionnalité.
+
 Le retour implicite ne fonctionne que lorsqu'il y a une seule instruction à l'intérieur de la fonction (et que les accolades et returnle mot-clé sont omis). */

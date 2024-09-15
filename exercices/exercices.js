@@ -42,10 +42,11 @@
 //Objectif : Écrire une fonction en JavaScript qui vérifie si un mot est un palindrome.
 
 function estPalindrome(string) {
-  let stringReverse = string.split("").reverse().join("");
-  let result = stringReverse === string;
-  console.log(`est un palindrome ${string} ?  ${result}`);
-}
+  const normalise = string.toLowerCase().trim()
+  const inverseString = normalise.split("").reverse().join("")
+  const result = normalise === inverseString
+  return `est ce que ${string} est un palindrome : ${result}`
+  }
 estPalindrome("radar");
 estPalindrome("tennis");
 
