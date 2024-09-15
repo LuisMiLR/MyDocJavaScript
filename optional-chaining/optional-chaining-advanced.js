@@ -1,15 +1,15 @@
 /* 
 //*********************************************************   Optional chaining (advanced) *****************************************************************************
 
-Dans cette leçon, nous apprendrons comment utiliser le chaînage facultatif pour accéder aux tableaux et appeler des fonctions.
+Dans cette leçon, nous apprendrons comment utiliser le Optional chaining pour accéder aux tableaux et appeler des fonctions.
 
-Utilisation facultative du chaînage avec des tableaux
-En supposant le code ci-dessous, où la clé temperaturespourrait se trouverundefined :
+Utilisation Optional chaining avec des tableaux.
 
-Dans cette leçon, nous apprendrons comment utiliser le chaînage facultatif pour accéder aux tableaux et appeler des fonctions.
+En supposant le code ci-dessous, où la clé temperatures pourrait se trouver undefined :
 
-Utilisation facultative du chaînage avec des tableaux
-En supposant le code ci-dessous, où la clé temperatures pourrait se trouver undefined : 
+Dans cette leçon, nous apprendrons comment utiliser le Optional chaining pour accéder aux tableaux et appeler des fonctions.
+
+En supposant le code ci-dessous, où la clé temperatures pourrait être undefined : 
 */
 
 const data = {
@@ -24,12 +24,11 @@ if (data.temperatures) {
 //Nous pouvons le refactoriser en :
 const firstValuee = data.temperatures?.[0];
 
-/* Remarquez comment nous avons utilisé ?.devant [0] pour accéder au premier élément du tableau. L'avantage du chaînage facultatif ici est que s'il 
-data.temperaturesest renvoyé null ou undefined, votre code ne sera pas interrompu. Il court-circuitera et reviendra undefined. C'est pourquoi nous avons 
-pu nous débarrasser de cette if condition.
+/* Remarquez comment nous avons utilisé ?.devant [0] pour accéder au premier élément du tableau. 
+L'avantage du Optional chaining ici est que si data.temperatures est renvoyé null ou undefined, votre code ne sera pas interrompu. Il court-circuitera et reviendra undefined. C'est pourquoi nous avons pu nous débarrasser de cette if condition.
 
 //********** Utilisation facultative du chaînage avec des fonctions
-De même, nous pouvons utiliser le chaînage facultatif pour appeler des fonctions en utilisant l'?.opérateur. Voici l'exemple avant le chaînage facultatif : 
+De même, nous pouvons utiliser le Optional chaining pour appeler des fonctions en utilisant ?.opérateur. Voici l'exemple avant le chaînage facultatif : 
 */
 
 const person = {
@@ -45,14 +44,14 @@ if (person.name) {
 //Dans lequel nous pouvons refactoriser :
 const upperCasedNamee = person.name?.toUpperCase();
 
-/* Cela n'appellera la .toUpperCase()méthode que si person.name elle n'est pas évaluée à null ou undefined.
+/* Cela n'appellera la .toUpperCase() méthode que si person.name n'est pas évaluée à null ou undefined.
 
-Si à un moment donné le code ci-dessus n'est pas clair, attendez les défis et essayez d'exécuter votre code sans if condition et sans chaînage facultatif et 
+Si à un moment donné le code ci-dessus n'est pas clair,  essayez d'exécuter votre code sans condition if et sans optional chaining et 
 notez qu'il échoue avec des erreurs telles que Cannot read property 'toUpperCase' of undefined.
 
-Le chaînage facultatif vous aide à éviter ces erreurs en renvoyant undefined.
+Le optional chaining vous aide à éviter ces erreurs en renvoyant undefined.
 
-Ainsi, dans le cas où person.nameis nullou undefined, person.name?.toUpperCase()court-circuitera et reviendra undefinedsans appeler la toUpperCase()méthode : 
+Ainsi, dans le cas où person.name is null ou undefined, person.name?.toUpperCase() court-circuitera et reviendra undefined sans appeler la toUpperCase() méthode : 
 
 const person = {
     age: 43,
