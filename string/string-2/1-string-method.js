@@ -14,8 +14,8 @@ names.trim(); // "Sam Blue"
 //String .startsWith() and .endsWith()
 
 /*
-La .startsWith(substring)méthode renvoie truelorsque le substringest trouvé au début de la chaîne et falsedans le cas contraire.
-Le .endsWith(substring)fonctionne de la même manière mais pour la fin de la chaîne.
+La .startsWith(substring)méthode renvoie true lorsque le substring est trouvé au début de la chaîne et false dans le cas contraire.
+Le .endsWith(substring) fonctionne de la même manière mais pour la fin de la chaîne.
 */
 
 const sentence = "Hello there. Welcome!";
@@ -33,7 +33,8 @@ sentence.endsWith("Welcome"); // false
 //String .includes(substring)
 
 /*
-La .includes(substring)méthode renvoie truelorsque le substringpeut être trouvé n'importe où dans la chaîne et falsesinon.
+La .includes(substring) méthode renvoie true lorsque le substring peut être trouvé n'importe où dans la chaîne et false sinon.
+cette methode s'utilise également avec les arrays
 */
 
 const sentences = "Hello there. Welcome!";
