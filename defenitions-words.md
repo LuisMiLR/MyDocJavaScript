@@ -110,7 +110,12 @@ Async/await simplifie la programmation asynchrone. Une fonction déclarée avec 
 
 Un paradigme en programmation est un style ou une méthode de programmation qui dicte comment les concepts de base d'un programme sont organisés. Par exemple, la programmation orientée objet (POO) organise le code autour d'objets, tandis que la programmation fonctionnelle organise le code autour de fonctions pures.
 
-## Conclusion
+## Regression
 
-En maîtrisant les bases de JavaScript, vous pouvez créer des applications robustes et efficaces. Comprendre les concepts clés comme les contextes d'exécution, les fermetures et le levage permet de tirer le meilleur parti de JavaScript.
-```
+En développement, une régression désigne un problème ou un bug qui apparaît dans un logiciel après une modification ou une mise à jour. En d'autres termes, une fonctionnalité qui fonctionnait correctement avant une mise à jour cesse de fonctionner ou se comporte de manière incorrecte après l'introduction de nouveaux changements (comme des corrections de bugs, de nouvelles fonctionnalités, ou des améliorations).
+
+Voici quelques exemples courants de régressions :
+
+Régression fonctionnelle : une fonctionnalité existante ne fonctionne plus comme prévu.
+Régression de performance : une mise à jour a rendu le logiciel plus lent ou moins efficace.
+Régression d'interface utilisateur : l'apparence ou la réactivité de l'interface se dégrade après des modifications.

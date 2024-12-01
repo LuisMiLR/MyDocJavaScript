@@ -94,7 +94,7 @@ const animals = ["cat", "dog", "mouse", "lion"];
 
 ### Valeurs par défaut et ignorer des éléments
 
-Vous pouvez ignorer des éléments du tableau et définir des valeurs par défaut de manière similaire à la déstructuration d'objets.
+Vous pouvez ignorer des éléments du tableau et définir des valeurs par défaut de manière similaire à la déstructuration d'objets. (voir chapitre destructuring object)
 
 ### Déstructurer le reste du tableau
 
@@ -103,4 +103,3 @@ Il est possible d'assigner le reste des éléments d'un tableau à une variable.
 ### Fonctionne aussi avec les strings
 
 La déstructuration peut également fonctionner avec les chaînes de caractères. Cela permet de facilement accéder à certains caractères d'une string en les assignant à des variables.
-```

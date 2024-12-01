@@ -29,6 +29,6 @@ Nous reviendrons sur la concaténation de tableaux une fois que nous aurons déc
 
 ## Résumé
 
-- Vous pouvez concaténer ou fusionner plusieurs tableaux dans un nouveau tableau en utilisant la syntaxe de propagation (`...`).
-```
+- Vous pouvez concaténer ou fusionner plusieurs tableaux dans un nouveau tableau en utilisant la syntaxe de propagation (`...`). "Rest Operator"
+
 

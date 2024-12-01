@@ -1,12 +1,6 @@
 # Objects
 
-_Dernière mise à jour : juillet 2024_
-
-Merci d'être un utilisateur PRO ! Nous vous recommandons de rejoindre notre communauté de discussions GitHub réservée aux utilisateurs PRO, où vous pourrez poser des questions et obtenir des mises à jour sur les produits. Nous avons également une liste de discussions notables où nous discutons de ChatGPT et recommandons des ressources et des conférences pour rester à jour.
-
-Vous pouvez rejoindre la discussion GitHub en cliquant sur l'icône PRO en haut à droite, puis en sélectionnant l'élément de la liste des discussions GitHub.
-
-Certains étudiants préfèrent parcourir le cours à leur propre rythme. Si vous souhaitez débloquer tous les chapitres, veuillez contacter le support via le centre d'aide, et nous serons heureux de vous aider.
+Dernière mise à jour : juillet 2024_
 
 ## Qu'est-ce qu'un Objet ?
 
@@ -76,5 +70,5 @@ console.log(user); // {id: 1, firstName: "Sam", lastName: "Blue", age: 21}
 - Un **objet** est un type de données qui permet de regrouper plusieurs variables en une seule variable contenant des **clés** et des **valeurs**.
 - En JavaScript, la convention recommandée est d'utiliser la notation **camelCase** pour les noms de propriétés (par exemple, `firstName` au lieu de `first_name`).
 - Pour lire ou mettre à jour la valeur d'une propriété, vous pouvez utiliser la **notation par points**.
-```
+
 
