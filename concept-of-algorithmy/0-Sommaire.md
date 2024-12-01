@@ -1,4 +1,6 @@
-### Apprendre les Concepts de Base de l'Algorithmique
+# Apprendre les Concepts de Base de l'Algorithmique
+
+### Dernière mise à jour : decembre 2024
 
 ## 3. Basic Concepts: Algorithm, Pseudocode, Control Flow
 
@@ -43,5 +45,7 @@
 ### Tutoriels et Documentation :
 - Documentation officielle de MDN Web Docs
 - Tutoriels sur W3Schools, GeeksforGeeks, et JavaScript.info
-```
+---
+
+
 

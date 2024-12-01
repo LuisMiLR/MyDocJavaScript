@@ -1,4 +1,3 @@
-```markdown
 # Instance Variables
 
 ### Dernière mise à jour : mai 2021
@@ -32,7 +31,7 @@ Lorsque vous créez une nouvelle instance avec le mot-clé `new`, la méthode `c
 ```javascript
 class Person {
   constructor() {
-    console.log("I was automatically called");
+    console.log('I was automatically called');
   }
 }
 
@@ -48,7 +47,7 @@ class Person {
   }
 }
 
-const person = new Person("Sam", "Green"); // Affiche : "Sam Green"
+const person = new Person('Sam', 'Green'); // Affiche : "Sam Green"
 ```
 
 ---
@@ -61,11 +60,11 @@ Les paramètres passés au constructeur (comme `firstName` et `lastName`) ne son
 class Person {
   constructor(firstName, lastName) {
     this.firstName = firstName; // Capture dans une variable d'instance
-    this.lastName = lastName;   // Capture dans une variable d'instance
+    this.lastName = lastName; // Capture dans une variable d'instance
   }
 }
 
-const person = new Person("Sam", "Green");
+const person = new Person('Sam', 'Green');
 ```
 
 Ces variables peuvent maintenant être utilisées dans n'importe quelle méthode d'instance.
@@ -75,10 +74,12 @@ Ces variables peuvent maintenant être utilisées dans n'importe quelle méthode
 ## **Variables d'instance**
 
 ### **Qu'est-ce qu'une variable d'instance ?**
+
 - Une **variable d'instance** appartient à une **instance spécifique** d'une classe.
 - Chaque instance d'une classe a ses propres variables d'instance, qui peuvent contenir des valeurs différentes.
 
 ### Exemple :
+
 ```javascript
 class Person {
   constructor(name, age) {
@@ -87,8 +88,8 @@ class Person {
   }
 }
 
-const person1 = new Person("Alice", 25);
-const person2 = new Person("Bob", 30);
+const person1 = new Person('Alice', 25);
+const person2 = new Person('Bob', 30);
 
 console.log(person1.name); // "Alice"
 console.log(person2.name); // "Bob"
@@ -97,19 +98,20 @@ console.log(person2.name); // "Bob"
 Ici, `name` et `age` sont des variables d'instance, spécifiques à chaque objet `person1` et `person2`.
 
 ### **Variables d'instance sans paramètres**
+
 Même si le constructeur ne prend pas de paramètres, vous pouvez définir des valeurs par défaut pour les variables d'instance :
 
 ```javascript
 class Person {
   constructor() {
-    this.name = "John"; // Valeur par défaut
-    this.age = 30;      // Valeur par défaut
+    this.name = 'John'; // Valeur par défaut
+    this.age = 30; // Valeur par défaut
   }
 }
 
 const person = new Person();
 console.log(person.name); // "John"
-console.log(person.age);  // 30
+console.log(person.age); // 30
 ```
 
 ---
@@ -118,7 +120,7 @@ console.log(person.age);  // 30
 
 - **Nom des classes :** Utilisez **UpperCamelCase**.
 - **Constructeur :** Initialisez les propriétés des instances.
-- **Variables d'instance :** 
+- **Variables d'instance :**
   - Capturent les données passées au constructeur.
   - Sont spécifiques à chaque instance.
   - Peuvent être définies avec ou sans paramètres.
@@ -130,15 +132,15 @@ Exemple récapitulatif :
 class Person {
   constructor(name, age) {
     this.name = name; // Variable d'instance
-    this.age = age;   // Variable d'instance
+    this.age = age; // Variable d'instance
   }
 }
 
-const person1 = new Person("Alice", 25);
-const person2 = new Person("Bob", 30);
+const person1 = new Person('Alice', 25);
+const person2 = new Person('Bob', 30);
 
 console.log(person1.name); // "Alice"
-console.log(person2.age);  // 30
+console.log(person2.age); // 30
 console.log(person1 === person2); // false
 ```
-```
+[Pour aller plus loin dans la comprehension des variables](../2-class-instance-methods/4-variable.md)

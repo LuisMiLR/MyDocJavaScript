@@ -1,4 +1,3 @@
-```markdown
 # Super Keyword
 
 ### Dernière mise à jour : avril 2024

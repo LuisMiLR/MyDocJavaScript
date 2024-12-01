@@ -1,4 +1,3 @@
-```markdown
 # **Class vs Function**
 
 ---

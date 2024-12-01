@@ -1,4 +1,3 @@
-```markdown
 # **Classes in frontend librairies**
 
 ---

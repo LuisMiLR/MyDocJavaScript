@@ -1,5 +1,4 @@
-```markdown
-# Instance Methods (Méthodes d'instance)
+# Instance variable recap
 
 ### Dernière mise à jour : mai 2021
 
@@ -12,6 +11,7 @@ Les **méthodes d'instance** sont des fonctions définies au sein d'une classe e
 ## **Définir une méthode d'instance**
 
 ### Exemple de définition d'une méthode d'instance :
+
 ```javascript
 // Définition de la classe
 class Person {
@@ -26,11 +26,12 @@ class Person {
 }
 
 // Utilisation de la classe
-const person = new Person("Sam", "Green");
+const person = new Person('Sam', 'Green');
 console.log(person.getFullName()); // "Sam Green"
 ```
 
 ### Points clés :
+
 - `getFullName()` est une méthode d'instance.
 - Elle est définie dans la classe et appelée sur une instance (`person`).
 - Vous **ne pouvez pas** appeler `Person.getFullName()` directement car il ne s'agit pas d'une méthode statique (voir chapitre suivant).
@@ -39,9 +40,12 @@ console.log(person.getFullName()); // "Sam Green"
 
 ## **Accéder aux variables d'instance**
 
+### [ rejoint de suite le point 4 pour tout savoir des variables ](../2-class-instance-methods/4-variable.md.md)
+
 Pour accéder aux variables d'instance dans une méthode, vous devez utiliser le mot-clé `this`. Les variables capturées dans le constructeur deviennent accessibles dans toutes les méthodes d'instance de la classe.
 
 ### Exemple correct :
+
 ```javascript
 class Person {
   constructor(firstName, lastName) {
@@ -56,7 +60,9 @@ class Person {
 ```
 
 ### Exemple incorrect :
+
 Le code suivant **ne fonctionne pas** car `firstName` et `lastName` ne sont pas définis :
+
 ```javascript
 class Person {
   constructor(firstName, lastName) {
@@ -71,6 +77,7 @@ class Person {
 ```
 
 **Pourquoi ?**
+
 - `firstName` et `lastName` doivent être précédés par `this` pour indiquer qu'il s'agit de variables d'instance.
 
 ---
@@ -81,6 +88,7 @@ class Person {
 - Il permet d'accéder aux variables et méthodes propres à cette instance.
 
 ### Exemple explicatif :
+
 ```javascript
 class Person {
   constructor(name, age) {
@@ -93,7 +101,7 @@ class Person {
   }
 }
 
-const person = new Person("Alice", 25);
+const person = new Person('Alice', 25);
 person.introduce(); // "Hi, my name is Alice and I am 25 years old."
 ```
 
@@ -110,6 +118,7 @@ person.introduce(); // "Hi, my name is Alice and I am 25 years old."
 ## **Exercice pratique**
 
 ### Définir une classe `Course` avec une méthode d'instance :
+
 ```javascript
 // Définition de la classe
 class Course {
@@ -128,10 +137,9 @@ class Course {
 }
 
 // Utilisation de la classe
-const course1 = new Course("Learn JavaScript", false);
+const course1 = new Course('Learn JavaScript', false);
 console.log(course1.getDescription()); // "You are currently studying the Learn JavaScript course."
 
-const course2 = new Course("Learn Programming", true);
+const course2 = new Course('Learn Programming', true);
 console.log(course2.getDescription()); // "You have completed the Learn Programming course."
-```
 ```

@@ -1,4 +1,3 @@
-```markdown
 # Class Inheritance (Héritage de classe)
 
 ### Dernière mise à jour : mars 2023

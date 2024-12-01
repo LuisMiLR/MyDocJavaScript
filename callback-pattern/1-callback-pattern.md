@@ -1,4 +1,3 @@
-```markdown
 # **The Callback Pattern**
 
 ---

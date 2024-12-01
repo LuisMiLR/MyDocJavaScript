@@ -1,4 +1,3 @@
-```markdown
 # Récapitulatif du chapitre : Les méthodes d'instance
 
 ### Dernière mise à jour : mai 2021
@@ -107,4 +106,3 @@ Ici, `this.name` et `this.age` font référence aux propriétés de l'instance `
 - `this` fait référence à l'instance actuelle de la classe, permettant d'accéder aux propriétés et méthodes de cette instance.
 
 Les méthodes d'instance sont essentielles pour créer des classes robustes et réutilisables dans vos projets.
-```

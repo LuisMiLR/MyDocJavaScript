@@ -1,4 +1,3 @@
-```markdown
 # Programmation Orientée Objet (POO)
 
 ### Dernière mise à jour : février 2022
@@ -129,5 +128,4 @@ class User {
 const user1 = new User("Sam", "Doe", "Mrs", 20);
 console.log(user1.getFullName()); // "Mrs. Sam Doe"
 console.log(user1.canVote()); // true
-```
 ```

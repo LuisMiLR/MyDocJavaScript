@@ -1,4 +1,3 @@
-```markdown
 # Introduction aux classes
 
 ### Dernière mise à jour : mai 2021

@@ -1,4 +1,3 @@
-```markdown
 # **Chapter Recap**
 
 ### **Résumé des concepts d'héritage et du mot-clé `super`**

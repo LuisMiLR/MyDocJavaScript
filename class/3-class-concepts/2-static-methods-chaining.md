@@ -1,4 +1,3 @@
-```markdown
 # Static Methods and Method Chaining
 
 ### Dernière mise à jour : février 2022
