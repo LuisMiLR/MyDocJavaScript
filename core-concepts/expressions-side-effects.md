@@ -5,12 +5,12 @@
 
 ## 1. Définition
 
-une **expression** est un morceau de code qui peut être évalué pour produire une valeur. En d'autre terme c'est comme une petite équation que le langage peut calculer et résoudre pour retourner un résultat (valeur).
+une **expression** est un morceau de code qui peut être évalué pour retourner une valeur. En d'autre terme c'est comme une petite équation que le langage peut calculer et résoudre pour retourner un résultat (valeur).
 
 On distingue deux grandes catégories :
 
-- **Expressions sans effet de bord** : elles produisent uniquement une valeur.  
-- **Expressions avec effet de bord** : elles produisent une valeur et modifient l’état du programme ou du monde extérieur.
+- **Expressions sans effet de bord** : elles retournent uniquement une valeur.  
+- **Expressions avec effet de bord** : elles retournent une valeur et modifient l’état du programme.
 
 ---
 
@@ -32,7 +32,7 @@ Ces expressions **ne modifient pas l’état du programme** : elles se contenten
 
 ## 3. Expressions avec effet de bord
 
->> En plus de produire une valeur, elles **modifient une variable, une structure, ou interagissent avec l’extérieur**.
+>> En plus de retourner une valeur, elles **modifient une variable, une structure, ou interagissent avec l’extérieur**.
 
 
 
@@ -83,8 +83,8 @@ document.body.innerHTML = "Bonjour !"; // modifie la page HTML
 
 | Type d’expression      | Caractéristique principale                | Exemples                                                                     |
 | ---------------------- | ----------------------------------------- | ---------------------------------------------------------------------------- |
-| **Sans effet de bord** | Produit une valeur, ne change rien        | `2+3`, `"JS".toLowerCase()`, `Math.sqrt(16)`                                 |
-| **Avec effet de bord** | Produit une valeur + change quelque chose | `x++`, `arr.push(42)`, `console.log("Hi")`, `document.body.innerHTML = "ok"` |
+| **Sans effet de bord** | retourne et une valeur, ne change rien        | `2+3`, `"JS".toLowerCase()`, `Math.sqrt(16)`                                 |
+| **Avec effet de bord** | retourne une valeur + change quelque chose | `x++`, `arr.push(42)`, `console.log("Hi")`, `document.body.innerHTML = "ok"` |
 
 ---
 
