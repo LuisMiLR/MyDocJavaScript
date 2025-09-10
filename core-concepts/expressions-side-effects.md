@@ -57,7 +57,7 @@ x++;    // modifie la variable x (passe de 5 à 6)
 ---
 
 En résumé :
-**Effet de bord = un changement dans le programme ou dans le monde extérieur (mémoire, variables, affichage, etc.).**
+**Effet de bord = un changement dans le programme (mémoire, variables, affichage, etc.).**
 
 
 
@@ -79,16 +79,8 @@ document.body.innerHTML = "Bonjour !"; // modifie la page HTML
 
 ---
 
-## 4. Tableau comparatif
 
-| Type d’expression      | Caractéristique principale                | Exemples                                                                     |
-| ---------------------- | ----------------------------------------- | ---------------------------------------------------------------------------- |
-| **Sans effet de bord** | retourne et une valeur, ne change rien        | `2+3`, `"JS".toLowerCase()`, `Math.sqrt(16)`                                 |
-| **Avec effet de bord** | retourne une valeur + change quelque chose | `x++`, `arr.push(42)`, `console.log("Hi")`, `document.body.innerHTML = "ok"` |
-
----
-
-## 5. Pourquoi c’est important ?
+## 4. Pourquoi c’est important ?
 
 * Les **expressions sans effet de bord** sont **prévisibles** et faciles à tester.
 * Les **effets de bord** sont parfois nécessaires (afficher, modifier, sauvegarder…), mais ils rendent le code moins prévisible et plus difficile à déboguer.
@@ -96,7 +88,7 @@ document.body.innerHTML = "Bonjour !"; // modifie la page HTML
 
 ---
 
-## 6. Résumé
+## 5. Résumé
 
 * **Sans effet de bord** → juste une valeur (aucun changement).
 * **Avec effet de bord** → valeur + modification (mémoire, variables, structures, ou extérieur).
