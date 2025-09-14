@@ -1,80 +1,116 @@
-// les boucles
 
-//****while "tant que"****
-// permet d executer du code jusqu'à que la condition de sortie soit vérifié
 
+````markdown
+# Les boucles en JavaScript
+
+---
+
+## 🔄 Boucle `while` (« tant que »)
+
+> Permet d’exécuter du code **tant que** la condition est vrai.
+
+```javascript
 let i = 0;
 while (i > 10) {
   console.log("Bonjour" + i);
   i += 1;
 }
+````
 
-//****for "Pour"****
-//est plus utilisé pour iterer un nombre de fois défini !!
+---
 
-//exemple 1
+## 🔁 Boucle `for` 
+
+> Utilisée pour **itérer un nombre de fois défini**.
+
+### Exemple 1 : simple compteur
+
+```javascript
 for (let i = 0; i < 10; i++) {
   console.log("Bonjour");
 }
+```
 
-//exemple 2
+### Exemple 2 : parcourir un tableau
+
+```javascript
 const notes = [2, 19, 8, 12, 3];
 for (let i = 0; i < notes.length; i++) {
-  console.log(i); //0, 1, 2, 3, 4
-  console.log(notes[i]); //permet d'avoir une boucle de parcourir le tableau : 2, 19, 8, 12, 3
+  console.log(i);        // 0, 1, 2, 3, 4
+  console.log(notes[i]); // 2, 19, 8, 12, 3
 }
-// la boucle for est utile pour parcourir les élements d'un tableau
-// ou bien pour faire un nombre d'itération comme dans exemple 1
+```
 
-//****for in****
-//permet d'itérer sur les clés d'un objet ou les clé d'un tableau
-//Cette boucle est utilisable pour parcourir un tableau ou aussi pour un objet
-//c'est une manière raccourcie de le faire par rapport à la boucle for.
+💡 La boucle `for` est pratique pour parcourir les éléments d’un tableau
+ou pour effectuer un nombre d’itérations fixe.
 
+---
+
+## 📌 Boucle `for…in`
+
+> Sert à **itérer sur les clés** d’un objet ou d’un tableau.
+> Plus concise qu’un `for` classique.
+
+### Exemple avec un tableau
+
+```javascript
 const notes2 = [2, 19, 8, 12, 3];
 for (let i in notes2) {
-  console.log(i); // 0, 1, 2, 3, 4
-  console.log(notes2[i]); //permet d'avoir la boucle de parcour de tableau : 2, 19, 8, 12, 3
+  console.log(i);       // 0, 1, 2, 3, 4
+  console.log(notes2[i]); // 2, 19, 8, 12, 3
 }
+```
 
-//exemple avec un objet
+### Exemple avec un objet
 
-const notes3 = {
-  a: 1,
-  b: 3,
-};
+```javascript
+const notes3 = { a: 1, b: 3 };
 
 for (let i in notes3) {
-  console.log(i); // dans ce cas la i prend comme valeurs les clés de l'objet
-  console.log(notes3[i]);
+  console.log(i);        // a, b
+  console.log(notes3[i]); // 1, 3
 }
+```
 
-//on peut utiliser for in sur une string
-// ça nous donne l'index de la lettre
+### Exemple avec une chaîne de caractères
+
+```javascript
 const greeting = "Bonjour";
 for (let letter in greeting) {
-  console.log(letter); //0, 1, 2, 3, 4, 5, 6
+  console.log(letter); // 0, 1, 2, 3, 4, 5, 6
 }
-// en effet car une chaine de caractère c'est un tableau de lettre
-// si on fait
-greeting[0]; //ça donne 'B'
 
-//for of
-// for of est déprécier a vérifier !!
+// Une string est comme un tableau de lettres :
+greeting[0]; // 'B'
+```
 
-//si on est intéressé que par la valeur des valeur
-// fonctionne que sur quelque chose itérable (les tableaux) et pas un objet
+---
 
-// fait référence au 1er exemple avec le tableau plus haut
-//const notes = [2, 19, 8, 12, 3];
+## 🔍 Boucle `for…of`
+
+> Permet d’itérer directement sur les **valeurs** (fonctionne sur les objets itérables : tableaux, chaînes…).
+
+### Sur un tableau
+
+```javascript
+const notes = [2, 19, 8, 12, 3];
 for (let note of notes) {
-  console.log(note); //0, 1, 2, 3, 4
+  console.log(note); // 2, 19, 8, 12, 3
 }
+```
 
-//avec une chaine de caractère le for of
-// ça va nous donner chaque lettre de notre mot, contrairement à for in qui donne
-//l'index
+### Sur une chaîne de caractères
+
+```javascript
 const greet = "Bonjour";
 for (let letter of greet) {
-  console.log(letter); //B o n j o u r
+  console.log(letter); // B o n j o u r
 }
+```
+
+> 💡 Contrairement à `for…in` qui renvoie l’**index**,
+> `for…of` renvoie directement chaque **valeur**.
+
+---
+
+```

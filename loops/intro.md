@@ -1,7 +1,7 @@
 ```markdown
 # **Définition**
 
-Une **boucle** en programmation est une structure de contrôle qui permet d'exécuter une séquence d'instructions de manière répétée tant qu'une condition spécifique est remplie, ou jusqu'à ce qu'une autre condition soit atteinte.
+Une boucle en programmation est une structure de contrôle qui permet d'exécuter une séquence d'instructions de manière répétée tant qu'une condition spécifique est remplie, ou jusqu'à ce qu'une autre condition soit atteinte.
 
 Les boucles sont un **élément fondamental** en programmation, car elles permettent d'automatiser des tâches répétitives. En **JavaScript**, deux des types de boucles les plus couramment utilisés sont la **boucle `while`** et la **boucle `for`**.
 

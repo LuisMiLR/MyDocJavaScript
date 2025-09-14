@@ -86,7 +86,16 @@ Cette documentation personnelle couvre une gamme complète de concepts en JavaSc
 
 ## Utilisation de la Documentation
 
-Cette documentation est disponible et peut être consultée à tout moment pour réviser les concepts et les pratiques en JavaScript.
+Cette documentation peut être consultée à tout moment pour réviser les concepts et les pratiques en JavaScript.
+
+## Preview des fichier markdown 
+
+Utilisez un des raccourcis :
+
+- Windows / Linux : Ctrl + Shift + V
+- Mac : Cmd + Shift + V
+
+Une fenêtre s’ouvre avec le rendu du Markdown.
 
 ## Auteur
 

@@ -1,7 +1,6 @@
 # Accessing Characters
 
 Vous pouvez accéder à un caractère spécifique dans une chaîne en utilisant la syntaxe des crochets `[]`.
-
 Vous devez fournir l'index du caractère auquel vous souhaitez accéder, en commençant par 0.
 
 Prenons un exemple où la variable `language` a la valeur : "JavaScript". Voici comment accéder au 1er, 2ème et 3ème caractères :
