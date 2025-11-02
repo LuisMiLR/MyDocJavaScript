@@ -16,3 +16,5 @@ Dans le chapitre suivant, nous allons examiner les méthodes qui modifient les t
 - Un objet immuable est un objet qui ne peut pas être modifié. Pour le modifier, il faut créer un nouvel objet basé sur l'original, tout en gardant l'objet initial inchangé.
 
 À bientôt pour explorer comment gérer l'immuabilité avec les tableaux et objets !
+
+🧠 En JavaScript, les objets sont passés par référence et les valeurs primitives sont passées par valeur.
