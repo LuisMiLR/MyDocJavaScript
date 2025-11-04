@@ -83,10 +83,15 @@ Cette documentation personnelle couvre une gamme complète de concepts en JavaSc
 
 25. **Scope**
 
+26. **Etc...**
+
 
 ## Utilisation de la Documentation
 
-Cette documentation peut être consultée à tout moment pour réviser les concepts et les pratiques en JavaScript.
+Cette documentation est consultable à tout moment pour réviser les concepts et les pratiques en JavaScript.
+elle convient au débutant jusqu'au niveau avancée. 
+
+Cette documentation est mise à jour régulièrement. 
 
 ## Preview des fichier markdown 
 

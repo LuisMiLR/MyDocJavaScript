@@ -119,3 +119,4 @@ Voici quelques exemples courants de régressions :
 Régression fonctionnelle : une fonctionnalité existante ne fonctionne plus comme prévu.
 Régression de performance : une mise à jour a rendu le logiciel plus lent ou moins efficace.
 Régression d'interface utilisateur : l'apparence ou la réactivité de l'interface se dégrade après des modifications.
+
