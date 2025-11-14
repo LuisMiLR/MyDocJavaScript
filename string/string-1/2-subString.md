@@ -89,4 +89,5 @@ console.log(skipFirstCharacter("Hello")); // "ello"
 **Note** : N'utilisez pas `substr()` car il est obsolète.
 ```
 
-Cela respecte les consignes avec des titres en anglais et du texte en français. Dis-moi si c'est ce que tu souhaitais !
+il est meme plus pratique d'utiliser la méthode slice() qui fonctionne de la meme manière sur les strings et les arrays
+voir fiche slice()

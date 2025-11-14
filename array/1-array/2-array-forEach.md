@@ -4,7 +4,7 @@ La méthode `forEach()` est utilisée pour parcourir chaque élément d'un table
 
 L'itération de tableau est l'un des concepts les plus importants que vous utiliserez en JavaScript.
 
-Disons que nous avons un tableau de notes et que vous souhaitez effectuer une boucle (ou une itération) sur chaque élément de ce tableau. Voici comment procéder en JavaScript :
+Disons que nous avons un tableau de notes et que vous souhaitez effectuer une itération (boucle) sur chaque élément de ce tableau. Voici comment procéder en JavaScript :
 
 ```javascript
 const grades = [10, 8, 13];

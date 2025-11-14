@@ -124,6 +124,50 @@ const someUnder10 = numberss.some((number) => number < 10); // false
 
 Remarquez comment `someOver18` est évalué à `true` car au moins un des éléments du tableau satisfait la condition `number >= 18`, tandis que `someUnder10` est évalué à `false` car aucun élément ne satisfait la condition `number < 10`.
 
+## array.from() 
+
+Array.from() crée un nouveau tableau à partir de n’importe quel objet itérable (string, Set, Map…)
+
+n’importe quel objet ressemblant à un tableau (array-like)
+ex : arguments, nodeList, { length: 3 }
+
+Et en plus, tu peux lui fournir une fonction de transformation, un peu comme map().
+
+✅ 2. Syntaxe
+Array.from(source, mapFunction?, thisArg?)
+
+Où :
+
+source = ce que tu veux transformer en tableau
+
+mapFunction = (optionnel) transformation appliquée à chaque élément
+
+thisArg = (optionnel) valeur du this dans la callback
+
+
+```javascript
+const a = [,2, ,4]
+a.map(x => x)
+// [ , 2, , 4 ]  → trous conservés
+```
+avec array.from() va lire toute les ocurences contrairement a map()
+
+```javascript
+const a = [, 2, ,4]
+const notNull = Array.from(a,x => x ?? 0)
+console.log(notNull) // [0, 2, 0, 4] → TROUS remplacés
+```
+✅ Quand préférer Array.from() plutôt que map() ?
+Quand l’entrée n’est pas un tableau :
+
+une string
+un Set
+un NodeList
+un objet avec { length: n }
+un tableau avec des trous (Array.from ne les ignore pas)
+
+Sinon, pour des tableaux normaux → .map() suffit très bien.
+
 ## Résumé
 
 - La méthode `.every(callback)` renvoie `true` lorsque chaque élément du tableau satisfait à la condition fournie dans le rappel.
