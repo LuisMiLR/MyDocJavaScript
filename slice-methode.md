@@ -178,7 +178,7 @@ str.slice(-6)    → "Script"
 
 > 🔹 **Utilise `slice()` par défaut.**
 > Elle est **immuable**, **polyvalente** (tableaux + chaînes),
-> et **plus sûre** que `substring()` ou `substr()`.
+> et **plus sûre** que `substring()` ou `substr()` qui est déprécié.
 
 ---
 
@@ -188,10 +188,3 @@ str.slice(-6)    → "Script"
 > → La méthode à retenir pour copier, découper ou extraire sans risque.
 
 ---
-
-```
-
----
-
-Souhaites-tu que je te génère directement le **fichier `.md` téléchargeable (`slice-method.md`)** prêt à déposer dans ton dossier `MyDocJavaScript` ?
-```

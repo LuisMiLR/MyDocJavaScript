@@ -86,6 +86,150 @@ Lorsque la fonction n'a qu'un seul paramètre, les parenthèses autour du param�
 const isLegal = age => age >= 18;
 ```
 
+
+## pour aller plus loin dans la compréhension 
+
+
+# ❓ Alors faire un implicit return sur plusieurs lignes ?
+
+👉 **C’est possible**, mais **uniquement** si **tu retournes une expression**,
+et que cette expression est :
+
+* des parenthèses `(...)`
+* ou un objet entre parenthèses
+
+Exemples 👇
+
+---
+
+# 🟦 3. Implicit return multi-ligne avec parenthèses
+
+### ✔️ Exemple valide (multi-ligne)
+
+```js
+const doubled = numbers.map(n =>
+  n * 2
+);
+```
+
+➡️ Pas d’accolade = implicit return
+➡️ Même si c’est sur plusieurs lignes !
+
+---
+
+### ✔️ Exemple multi-ligne plus complexe
+
+```js
+const productNames = products.map(item =>
+  item.name.toUpperCase()
+);
+```
+
+Toujours bon ✔️
+
+---
+
+# 🟦 4. Implicit return d’un objet — IMPORTANT
+
+Si tu veux retourner un objet,
+tu dois **l’entourer de parenthèses**, sinon `{}` est interprété comme un bloc vide.
+
+### ❌ Erreur
+
+```js
+products.map(item => {
+  name: item.name  // ❌ ceci est un "label", pas un objet
+});
+```
+
+Résultat → `[undefined, undefined, ...]`.
+
+---
+
+### ✔️ Correct (implicit return + objet)
+
+```js
+const discounted = products.map(item => ({
+  name: item.name,
+  price: item.price * 0.9
+}));
+```
+
+💡 Les **parenthèses** indiquent :
+➡️ *“Voici une expression objet à retourner, pas un bloc de code.”*
+
+---
+
+# 🟦 5. Résumé visuel
+
+| Syntaxe                 | Return implicite ? | Exemple            |
+| ----------------------- | ------------------ | ------------------ |
+| `x => x * 2`            | ✔️ oui             | OK                 |
+| `x => (x * 2)`          | ✔️ oui             | OK                 |
+| `x => ({ a: x })`       | ✔️ oui             | Retour d’objet     |
+| `x => { x * 2 }`        | ❌ non              | retourne undefined |
+| `x => { return x * 2 }` | ✔️ oui             | return explicite   |
+
+---
+
+# 🧠 En résumé ultra simple
+
+### ✔️ PAS D’ACCOLADES → implicit return
+
+### ✔️ OBJET → mettre dans des parenthèses `( { ... } )`
+
+### ✔️ MULTI-LIGNE → OK tant qu’il n’y a pas d’accolades
+
+---
+
+# 🔥 Bonus : trois versions équivalentes
+
+### 1. Return implicite
+
+```js
+products.map(item => item.name);
+```
+
+### 2. Return implicite multi-ligne
+
+```js
+products.map(item =>
+  item.name
+);
+```
+
+### 3. Return explicite
+
+```js
+products.map(item => {
+  return item.name;
+});
+```
+
+➡️ Les trois font **exactement la même chose**, mais seule la dernière utilise `{}` + `return`.
+
+---
+
+Souhaites-tu que je t’ajoute maintenant une **section dédiée “Implicit return”** dans ta fiche `.map()` ?
+Je peux te rédiger un bloc clair que tu colleras directement dans ton document JS.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ---
 
 ### Résumé
