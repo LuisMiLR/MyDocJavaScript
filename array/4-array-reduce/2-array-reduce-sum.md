@@ -38,7 +38,7 @@ Le réducteur dans cet exemple est :
 
 Il s'agit de la fonction de rappel appliquée à chaque élément du tableau. Ce rappel prend deux paramètres : `total` et `current`.
 
-- `total` fait référence à la dernière valeur calculée par la fonction de réduction (souvent appelée **accumulateur**).
+- `total` fait référence à la dernière valeur calculée par la fonction de réduction (souvent appelée **accumulateur** dans la documentation, ce qui est un nom plus correct).
 - `current` fait référence à l'élément courant du tableau.
 
 Voici la manière dont ces paramètres évoluent à chaque étape :
@@ -81,4 +81,3 @@ JavaScript transmet automatiquement votre `initialValue` au paramètre `total` l
 - `total` (ou **accumulateur**) garde une trace du résultat de la réduction, comme la somme dans notre exemple.
 - `current` représente un élément du tableau.
 - La fonction `reducer` est appelée pour chaque élément du tableau.
-```

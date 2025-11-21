@@ -1,6 +1,6 @@
 # Array Reduction: Multiplication
 
-_Dernière mise à jour : avril 2022_
+_Dernière mise à jour : fevrirer 2025_
 
 Dans cette leçon, nous allons explorer un autre exemple de réduction de tableau, qui est la multiplication.
 
@@ -21,11 +21,11 @@ console.log(result); // 100
 
 ### Valeur de départ pour la multiplication
 
-Avant d'expliquer le code étape par étape, parlons de la `startingValue`, qui est 1 ici.
+Avant d'expliquer le code étape par étape, parlons de la `initialValue`, qui est 1 ici.
 
-Lors d'une multiplication, nous ne pouvons pas avoir une valeur de départ de `0`. En effet, tout nombre multiplié par `0` donnera `0` (`5 * 0 = 0`). Nous avons besoin d'un nombre neutre pour la multiplication, et ce nombre est `1`, car tout nombre multiplié par `1` reste le même nombre (par exemple, `1 * 5 = 5`).
+Lors d'une multiplication, nous ne pouvons pas avoir une valeur de départ de `0` c'est parce que tout nombre multiplié par `0` donnera `0` (`5 * 0 = 0`). Nous avons besoin d'un nombre neutre pour la multiplication, et ce nombre est `1`, car tout nombre multiplié par `1` reste le même nombre (par exemple, `1 * 5 = 5`).
 
-C'est pourquoi dans la multiplication nous utilisons une valeur de départ de `1`, tandis que pour la somme, nous utilisons une valeur de départ de `0`.
+C'est pourquoi dans la multiplication nous utilisons une valeur de départ de `1` et pour la somme, nous utilisons une valeur de départ de `0`.
 
 ### Explication étape par étape
 
@@ -58,7 +58,7 @@ En ce qui concerne l'utilisation de `.reduce()`, il existe trois erreurs courant
    En raison du nombre de parenthèses et d'accolades, le code peut devenir compliqué. Si vous rencontrez des erreurs, réécrivez le code à partir de zéro ou notez-le sur papier.
 
 2. **Oublier le mot-clé `return`**  
-   Si vous oubliez de `return` dans la fonction de rappel, cela conduira à des valeurs `undefined`, ce qui aboutira probablement à un résultat de `NaN`. Assurez-vous de bien inclure `return` à l'intérieur du rappel.
+   Oublier de retourner une valeur mènera à des valeurs undefined qui se traduiront très probablement par un résultat `NaN`. Assurez-vous de retourner une valeur depuis l'intérieur du callback de .reduce().
 
 3. **Valeur initiale incorrecte**  
    Si vous oubliez de fournir une `initialValue` ou si vous donnez une `initialValue` incorrecte (par exemple, `0` pour une multiplication), vous finirez avec un résultat de `0`, ce qui devrait indiquer que la `initialValue` était incorrecte.
@@ -68,6 +68,6 @@ En ce qui concerne l'utilisation de `.reduce()`, il existe trois erreurs courant
 - Pour la multiplication, utilisez une `initialValue` de `1`.
 - Réduisez les erreurs courantes :
   - Erreurs de syntaxe.
-  - Oublier de `return`.
-  - Fournir une `initialValue` incorrecte.
+  - Oublier de retourner une valeur (`return`).
+  - `initialValue` incorrecte.
 ```

@@ -2,7 +2,7 @@
 
 _Dernière mise à jour : février 2023_
 
-Vous pouvez concaténer ou fusionner le contenu de plusieurs tableaux dans un nouveau tableau en utilisant la syntaxe de propagation (`...`). Voici un exemple :
+Vous pouvez concaténer ou fusionner le contenu de plusieurs tableaux dans un nouveau tableau en utilisant la syntaxe de décomposition `spread`(`...`). Voici un exemple :
 
 ```javascript
 const lat = [5.234];

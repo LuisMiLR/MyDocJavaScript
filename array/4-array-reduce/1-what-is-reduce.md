@@ -26,13 +26,13 @@ Un autre exemple est la multiplication. Par exemple :
 
 On peut réduire le tableau `[10, 2, 2]` en un seul nombre : `40` (`10 * 2 * 2 = 40`).
 
-## Réduction : Somme ou Multiplication ?
+## Qu'est ce que le reducer
 
-La méthode `reduce()` n'est ni une somme ni une multiplication en soi. C'est parce que la méthode `reduce()` accepte un réducteur, qui est une fonction de rappel (callback) que vous écrivez. Ce rappel peut être une somme, une multiplication, ou toute autre logique que vous choisissez.
+Alors, la méthode reduce est-elle une somme ou une multiplication ? Ce n'est ni l'un ni l'autre. C'est parce que la méthode reduce() accepte le reducer qui est une fonction de rappel que vous devez écrire. Cette fonction de rappel peut être une somme, une multiplication, ou toute autre logique à laquelle vous pourriez penser.
 
-En résumé, `reduce()` est une fonction générique qui permet de réduire un tableau en une seule valeur. La manière dont vous réduisez ce tableau est configurable selon la logique que vous spécifiez dans le callback du réducteur.
+Ainsi, reduce est une fonction générique qui réduira un tableau en une seule valeur. La manière dont elle réduira ce tableau en une seule valeur est configurable par vous, le développeur. Vous pouvez la configurer dans la fonction de rappel reducer.
 
-Cela peut sembler encore un peu flou sans le code, mais nous détaillerons ce processus dans les prochaines leçons.
+Nous ne nous attendons pas à ce que les choses soient claires pour l'instant car nous ne vous avons pas encore montré le code, mais ci-dessous vous trouverez le bilan des concepts les plus importants abordés jusqu'à présent.
 
 ## Résumé
 
