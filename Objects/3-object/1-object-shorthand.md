@@ -1,8 +1,9 @@
 # Object Shorthand
 
-_Dernière mise à jour : avril 2024_
+_Dernière mise à jour : novmebre 2025_
 
-Une fonctionnalité intéressante des objets est le **raccourci objet**. Supposons que vous ayez une variable `age` et que vous souhaitiez créer un objet avec une clé `age` et que sa valeur soit également la variable `age` :
+
+Une fonctionnalité astucieuse des objets est la syntaxe abrégée des objets **object shorthand**. Supposons que vous ayez une variable age et que vous vouliez créer un objet avec une clé age dont la valeur est la variable age :
 
 ```javascript
 const age = 18;
@@ -42,7 +43,7 @@ console.log(settings); // {isAdmin: false, darkMode: true}
 
 ## Debugging Tip
 
-Le **raccourci objet** peut également être utilisé comme une astuce de débogage très utile. Par exemple, supposons que vous ayez le code suivant :
+Le **Object shorthand** (raccourcie d'objet) peut également être utilisé comme une astuce de débogage très utile. Par exemple, supposons que vous ayez le code suivant :
 
 ```javascript
 const sum = (a, b) => {
@@ -53,7 +54,7 @@ const sum = (a, b) => {
     return total;
 };
 
-// Sample usage
+// exemple d'utilisation
 sum(1, 3);
 ```
 

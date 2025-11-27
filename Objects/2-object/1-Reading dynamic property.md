@@ -1,75 +1,127 @@
-# Reading Dynamic Property
+# Reading Dynamic Property (lecture de propriété dynamique)
 
-Nous avons vu que nous pouvons utiliser la notation par points pour lire une propriété sur un objet. Par exemple :
+_Last updated: February 2024_
 
-```javascript
+Dans le premier chapitre sur les Objets, nous avons vu que nous pouvions utiliser la **notation par points** pour lire une propriété sur un objet.
+
+```js
 const user = {
     id: 1,
     name: "Sam Green"
 };
 
 user.id; // 1
-```
+````
 
-Et maintenant, que se passerait-il si le nom de la propriété que vous souhaitez lire était stocké dans une variable ? Par exemple :
+---
 
-```javascript
-const key = "id"; // the name of the property that we want to access on the user object
+## 🔹 Propriété stockée dans une variable
 
-// ❌ this does NOT work
+Que se passe-t-il si le nom de la propriété que vous souhaitez lire est stocké dans une variable ?
+
+```js
+const key = "id"; // le nom de la propriété à laquelle nous voulons accéder
+
+// ❌ cela ne fonctionne PAS
 user.key; // undefined
 ```
 
-Nous ne pouvons pas utiliser ici la syntaxe à points `user.key` car la propriété est dynamique. Lorsque vous écrivez `user.key`, JavaScript recherchera une propriété littéralement appelée `key`, ce qui n'est pas ce que nous voulons. Au lieu de cela, nous devons obtenir la valeur de la variable `key`, qui est `"id"`.
+Ici, `user.key` cherche une propriété **nommée "key"**, ce qui n’existe pas dans l’objet.
 
-Pour cela, vous devez utiliser les crochets comme suit :
+---
 
-```javascript
-const uzer = {
+## ✅ Accès dynamique avec les crochets `[]`
+
+Pour lire une propriété dont le nom est dynamique, vous devez utiliser la syntaxe avec crochets :
+
+```js
+const user = {
     id: 1,
     name: "Sam Green",
     age: 20
 };
 
-const keyy = "id";
+const key = "id";
 user[key]; // 1
 ```
 
-Cela fonctionne car `[key]` évalue l'expression à l'intérieur des crochets. Dans ce cas, `key` évalue à `"id"`. Nous finissons donc par lire la propriété `id`, qui renvoie `1` (car `user.id` est `1`).
+Cette syntaxe fonctionne car :
 
-### Pourquoi utiliser cette méthode ?
+* `key` contient `"id"`
+* `user[key]` devient `user["id"]`
+* ce qui renvoie `1`
 
-Vous pensez probablement que c'est trop compliqué et que nous aurions pu simplement accéder à `user.id`. C'est vrai, cependant, il existe des cas où la clé sera stockée dans une variable. Par exemple, prenons la fonction suivante :
+---
 
-```javascript
+## ✅ Exemple fonctionnel : fonction dynamique
+
+```js
 const getValue = (user, keyToRead) => {
     return user[keyToRead];
-}
+};
 
-// Sample usage
+// Exemple d'utilisation
 getValue({id: 2, name: "Sam"}, "name"); // "Sam"
 getValue({id: 2, name: "Sam"}, "id"); // 2
 ```
 
-Dans ce cas, `getValue` accepte un objet `user` puis le `keyToRead`. Pour pouvoir implémenter la fonction, nous avons dû accéder à la propriété de manière dynamique avec `user[keyToRead]`. Cela permet à la fonction d'être dynamique et d'accepter n'importe quelle clé de l'objet `user`, et sa valeur sera renvoyée !
+Cette fonction est **dynamique** : elle accepte n’importe quelle clé et renvoie la valeur correspondante.
 
-Ne vous inquiétez pas si le concept n'est pas encore clair, c'est un défi difficile. Nous vous proposerons un défi avec du DOM pour que vous puissiez mieux le visualiser.
+---
 
+# Object.keys()
 
-## exemple :
+La méthode `Object.keys(obj)` renvoie un **tableau contenant toutes les clés** d'un objet.
 
-Ajouter plus de flexibilité
-Supposons maintenant que tu ne sais pas à l'avance quelle propriété tu veux lire. Tu pourrais utiliser un tableau de noms de propriétés et une boucle pour afficher toutes les valeurs dynamiquement.
+```js
+const user = {
+    id: 1,
+    name: "Sam Green",
+    age: 20
+};
 
+const keys = Object.keys(user);
+console.log(keys); // ["id", "name", "age"]
 ```
-javascript
-Copier le code
-const properties = ["id", "name", "price", "inStock"];
 
-properties.forEach((prop) => {
-    console.log(product[prop]); // Affiche successivement 101, "Laptop", 1200, true
+👉 `Object` (avec un O majuscule) est une variable **globale JavaScript** contenant des méthodes utiles pour les objets.
+`Object.keys()` accepte n’importe quel objet en paramètre.
+
+---
+
+## 🧪 Mise en pratique
+
+Puisque `Object.keys()` renvoie un tableau, vous pouvez parcourir chaque clé et obtenir sa valeur dynamiquement :
+
+```js
+const settings = {
+    theme: "Dark",
+    version: "2.4.1",
+    beta: false
+};
+
+const keys = Object.keys(settings);
+console.log(keys); // ["theme", "version", "beta"]
+
+keys.forEach(key => {
+    console.log(settings[key]);
 });
-
-Ici, on utilise la boucle pour passer dynamiquement à travers les noms des propriétés contenus dans le tableau properties et accéder à chaque valeur dans l'objet product grâce à la syntaxe avec crochets product[prop].
 ```
+
+Résultat :
+
+```
+"Dark"
+"2.4.1"
+false
+```
+
+---
+
+# ✅ Bilan
+
+* ❌ La notation par points ne fonctionne pas avec une propriété dynamique
+* ✅ Utiliser la syntaxe `object[key]`
+* `object[key]` évalue d’abord `key`, puis lit la propriété correspondante
+* `Object.keys(obj)` renvoie un tableau contenant toutes les clés de l'objet
 

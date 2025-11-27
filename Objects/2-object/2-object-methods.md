@@ -45,8 +45,11 @@ false
 ---
 
 ## `Object.values()`
+Nous avons vu précedemment que nous pouvons accéder aux valeurs d'un objet en bouclant à travers les clés, puis en accédant dynamiquement aux clés. Cela fonctionne si vous avez besoin d'accéder à la fois aux clés et aux valeurs. Cependant, si vous n'avez besoin que d'accéder aux valeurs, alors vous pouvez utiliser Object.values() qui renvoie un tableau des valeurs 
 
 La méthode `Object.values()` renvoie un tableau contenant les valeurs des propriétés de l'objet.
+
+
 
 ### Exemple :
 
@@ -61,11 +64,12 @@ const values = Object.values(user1);
 console.log(values); // [1, "Sam Green", 20]
 ```
 
+
 ---
 
 ## `Object.entries()`
 
-La méthode `Object.entries()` renvoie un tableau de tableaux représentant chaque paire clé/valeur de l'objet.
+La méthode `Object.entries()` renvoie un tableau de tableaux représentant chaque paire clé/valeur de l'objet. Visualisons-le :
 
 ### Exemple :
 
@@ -75,7 +79,11 @@ const user2 = {
   name: "Sam Green",
   age: 20,
 };
+```
 
+La variable entries renverra le tableau de tableaux suivant :
+
+```
 const entries = Object.entries(user2);
 console.log(entries); 
 ```
@@ -137,6 +145,8 @@ Cela se produit parce que vous essayez d'appeler une méthode sur une valeur `un
 ## `[object Object]`
 
 Lorsque vous voyez `[object Object]`, cela signifie que la méthode `.toString()` a été automatiquement appelée sur un objet. Cela se produit souvent lors de l'utilisation de `console.log()` sur des objets.
+
+Donc, si vous voyez [object Object], cela signifie que vous avez essayé d'utiliser un objet dans un contexte qui attend une chaîne de caractères. Par exemple :
 
 ---
 
